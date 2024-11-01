@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream:Assets/Art/Materials/VampireMats/Vampire_standardSurface3_BaseMap.png.meta
-guid: ac1d357043c1cde4cab19f774ecb6f1d
-=======
-guid: 8609f5dedd74675489ea396964ccff74
->>>>>>> Stashed changes:Assets/Materials/VampireMats/Vampire_standardSurface3_BaseMap.png.meta
+guid: ddcd5efcb485a0f4181905c766160dfa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

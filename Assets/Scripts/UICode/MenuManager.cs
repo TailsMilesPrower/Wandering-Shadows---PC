@@ -14,12 +14,9 @@ public class MenuManager : MonoBehaviour
     {
         
     }
-<<<<<<< Updated upstream
 
     public void Menu()
     {
 
     }
-=======
->>>>>>> Stashed changes
 }

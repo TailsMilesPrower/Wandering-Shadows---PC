@@ -2690,7 +2690,7 @@ GameObject:
   - component: {fileID: 1805710699}
   - component: {fileID: 1805710703}
   m_Layer: 7
-  m_Name: Plane
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3197,17 +3197,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 596213548}
     - target: {fileID: 1063515060842175019, guid: f8b76540710319049bf3095be54a539f, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 7530883953379476012}
-    - target: {fileID: 1063515060842175019, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: targetDest
       value: 
       objectReference: {fileID: 378197480}
-    - target: {fileID: 1063515060842175019, guid: f8b76540710319049bf3095be54a539f, type: 3}
-      propertyPath: layermask.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
     - target: {fileID: 2064507565222195085, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: objectToRotateSun
       value: 
@@ -3256,14 +3248,6 @@ PrefabInstance:
       propertyPath: Hud
       value: 
       objectReference: {fileID: 112797355}
-    - target: {fileID: 6817280832862636178, guid: f8b76540710319049bf3095be54a539f, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 749eb1de03de4e04281c2c4559066f0a, type: 2}
-    - target: {fileID: 6817280832862636178, guid: f8b76540710319049bf3095be54a539f, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 749eb1de03de4e04281c2c4559066f0a, type: 2}
     - target: {fileID: 7503625447058638574, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_Name
       value: VampirePrefab
@@ -3281,11 +3265,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8b76540710319049bf3095be54a539f, type: 3}
---- !u!195 &7530883953379476012 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 4427334600414219704, guid: f8b76540710319049bf3095be54a539f, type: 3}
-  m_PrefabInstance: {fileID: 7530883953379476011}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7530883953379476019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5752915553953570256, guid: f8b76540710319049bf3095be54a539f, type: 3}

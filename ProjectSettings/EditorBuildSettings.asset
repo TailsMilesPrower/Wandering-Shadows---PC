@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/OfficialPrototype.unity
+    guid: 2c5f366a65bb6424fac88b054083e1be
+  - enabled: 1
+    path: Assets/Scenes/Test Scenes/S_HilmirPrototype.unity
+    guid: 489ff2710b9cdd949864a70572a4c3fc
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0

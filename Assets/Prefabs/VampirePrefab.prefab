@@ -128,7 +128,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   dirLight: {fileID: 0}
-  DamageRepeatRate: 0.3
+  DamageRepeatRate: 0.1
   DamageAmount: 1
   Repeating: 1
   sunRraycastHightFactor: 1

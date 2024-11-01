@@ -6,7 +6,7 @@ public class CameraRotator : MonoBehaviour
 {
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Q)) 
         {
             transform.Rotate(0, -1, 0);
         }

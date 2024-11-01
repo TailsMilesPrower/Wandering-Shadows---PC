@@ -25,11 +25,11 @@ public class Sun2 : MonoBehaviour
     void CheckRotation()
     {
 
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Q) && !Input.GetKey(KeyCode.E))
         {
             targetRotation = Quaternion.Euler(45, objectToRotateSun.transform.eulerAngles.y - 1f, 0);
         }
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.E) && !Input.GetKey(KeyCode.Q))
         {
             targetRotation = Quaternion.Euler(45, objectToRotateSun.transform.eulerAngles.y + 1f, 0);
         }

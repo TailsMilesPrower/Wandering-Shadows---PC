@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SunMonitor : MonoBehaviour
 {
+    private float _nextTimeTimerTriggers = 0f;
+
     public LayerMask mask;
     public Light dirLight;
     private Vector3 oppositeDirection;
@@ -11,10 +13,17 @@ public class SunMonitor : MonoBehaviour
 
 
     private bool _isCausingDamage = false;
-    public float DamageRepeatRate = 1f;
+    public float DamageRepeatRate = 0.3f;
     public int DamageAmount = 1;
     public bool Repeating = true;
-    
+    [SerializeField] private float sunRraycastHightFactor = 1f;
+
+    private void Awake()
+    {
+        _nextTimeTimerTriggers = Time.realtimeSinceStartup + DamageRepeatRate;
+    }
+
+
 
 
     // Start is called before the first frame update
@@ -29,8 +38,8 @@ public class SunMonitor : MonoBehaviour
         oppositeDirection = -1f * dirLight.transform.forward;
         // Debug.Log(oppositeDirection.ToString());
 
-        if (Physics.BoxCast(transform.position, transform.localScale * 0.25f, oppositeDirection, out RaycastHit hit, transform.rotation, 100f, mask)) {
-            Debug.DrawRay(transform.position, oppositeDirection * hit.distance, Color.green);
+        if (Physics.Raycast(transform.position+ Vector3.up * sunRraycastHightFactor, oppositeDirection, 100f, mask)) {
+           // Debug.DrawRay(transform.position, oppositeDirection * hit.distance, Color.green);
             playerRenderer.material.color = Color.green;
 
             //No Dmg from sun
@@ -55,22 +64,23 @@ public class SunMonitor : MonoBehaviour
 
                 if (player != null)
                 {
-                    if (Repeating)
+                    if (_isCausingDamage && _nextTimeTimerTriggers < Time.realtimeSinceStartup)
                     {
-                        StartCoroutine(TakeDamage(player, DamageRepeatRate));
+                        
+                            // Do the thing!
+                        TakeDamage(player, DamageRepeatRate);
+
+                            _nextTimeTimerTriggers = Time.realtimeSinceStartup + DamageRepeatRate;
+                        
                     }
                 }
             }
         }
     }
 
-    IEnumerator TakeDamage(PlayerController player, float repeatRate)
+    private void TakeDamage(PlayerController player, float repeatRate)
     {
-        while (_isCausingDamage)
-        {
-            player.TakeDamage(DamageAmount);
-            TakeDamage(player, repeatRate);
-            yield return new WaitForSeconds(repeatRate);
-        }
+        repeatRate = DamageRepeatRate;
+        player.TakeDamage(DamageAmount);
     }
 }

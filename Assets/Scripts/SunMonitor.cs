@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SunMonitor : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class SunMonitor : MonoBehaviour
     public bool Repeating = true;
     [SerializeField] private float sunRraycastHightFactor = 1f;
 
+    [SerializeField] private AudioClip damageSoundClip;
+    private AudioSource audioSource;
+
     private void Awake()
     {
         _nextTimeTimerTriggers = Time.realtimeSinceStartup + DamageRepeatRate;
@@ -29,7 +33,9 @@ public class SunMonitor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerRenderer = GetComponent<Renderer>();    
+        playerRenderer = GetComponent<Renderer>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -62,8 +68,12 @@ public class SunMonitor : MonoBehaviour
                 _isCausingDamage = true;
                 PlayerController player = gameObject.GetComponent<PlayerController>();
 
+                
+
                 if (player != null)
                 {
+                    
+
                     if (_isCausingDamage && _nextTimeTimerTriggers < Time.realtimeSinceStartup)
                     {
                         
@@ -71,7 +81,9 @@ public class SunMonitor : MonoBehaviour
                         TakeDamage(player, DamageRepeatRate);
 
                             _nextTimeTimerTriggers = Time.realtimeSinceStartup + DamageRepeatRate;
-                        
+
+                        /*audioSource.clip = damageSoundClip;
+                        audioSource.Play();*/
                     }
                 }
             }

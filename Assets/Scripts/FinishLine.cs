@@ -17,6 +17,6 @@ public class FinishLine : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.LoadScene("EndMenu");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

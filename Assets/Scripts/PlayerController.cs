@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
         if (IsDead)
         {
-            SceneManager.LoadScene("Simple_Prototype_Scene");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
         }
         //Play Burning soundeffect
        

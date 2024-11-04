@@ -9,12 +9,10 @@ public class Collectible : MonoBehaviour
     public static event Action OnCollected;
     public static int total;
 
-    private AudioSource audioSource;
-    [SerializeField] private AudioClip collectSoundClip;
 
     private void Awake()
     {
-        total++;
+        total = 3;
     }
 
     // Update is called once per frame
@@ -29,8 +27,6 @@ public class Collectible : MonoBehaviour
         {
             OnCollected?.Invoke();
             Destroy(gameObject);
-            audioSource.clip = collectSoundClip;
-            audioSource.Play();
         }
     }
 

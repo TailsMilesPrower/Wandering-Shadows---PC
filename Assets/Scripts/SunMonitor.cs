@@ -94,5 +94,8 @@ public class SunMonitor : MonoBehaviour
     {
         repeatRate = DamageRepeatRate;
         player.TakeDamage(DamageAmount);
+
+        if (player.IsDead)
+            _isCausingDamage = false;
     }
 }

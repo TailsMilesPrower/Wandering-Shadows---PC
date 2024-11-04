@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Audio;
 
 public class Collectible : MonoBehaviour
 {
     public static event Action OnCollected;
     public static int total;
+
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip collectSoundClip;
 
     private void Awake()
     {
@@ -25,6 +29,8 @@ public class Collectible : MonoBehaviour
         {
             OnCollected?.Invoke();
             Destroy(gameObject);
+            audioSource.clip = collectSoundClip;
+            audioSource.Play();
         }
     }
 

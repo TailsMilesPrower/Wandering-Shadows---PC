@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.UI;
 
-public class MenuManager : MonoBehaviour
+public class SoundEffectManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,10 +12,5 @@ public class MenuManager : MonoBehaviour
     void Update()
     {
         
-    }
-
-    public void Menu()
-    {
-
     }
 }

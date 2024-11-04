@@ -7,6 +7,6 @@ public class MenuManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void GoToNextLevel()
     {
-        SceneManager.LoadScene("Simple_Prototype_Scene");
+        SceneManager.LoadScene("Level8");
     }
 }

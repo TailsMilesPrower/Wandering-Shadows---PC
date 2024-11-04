@@ -8,6 +8,7 @@ public class InteractableObjects : MonoBehaviour
     //public GameObject interactableDest;
     private Rigidbody rb;
     public Vector3 dirForce;
+    bool wasClicked = false;
     
     // Start is called before the first frame update
     void Start()
@@ -18,14 +19,19 @@ public class InteractableObjects : MonoBehaviour
 
     void OnMouseDown()
     {
-        rb.useGravity = true;
+        if (!wasClicked)
+        {
+            wasClicked = true;
 
-        //Vector3 directionToTarget = (interactableDest.transform.position - transform.position).normalized;
-        float forceMagnitude = 40f;
+            rb.useGravity = true;
 
-        rb.AddForce (dirForce * forceMagnitude, ForceMode.Impulse);
+            //Vector3 directionToTarget = (interactableDest.transform.position - transform.position).normalized;
+            float forceMagnitude = 40f;
 
-        //Vector3 forwardForce = transform.position * 2f;
-        //rb.AddForce (forwardForce, ForceMode.Impulse);
+            rb.AddForce(dirForce * forceMagnitude, ForceMode.Impulse);
+
+            //Vector3 forwardForce = transform.position * 2f;
+            //rb.AddForce (forwardForce, ForceMode.Impulse);
+        }
     }
 }

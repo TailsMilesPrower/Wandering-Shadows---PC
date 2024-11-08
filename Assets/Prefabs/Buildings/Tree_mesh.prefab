@@ -68,6 +68,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -784,8 +787,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -816,19 +819,19 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpSpecMap:
-        m_Texture: {fileID: 2800000, guid: b9fb1b77a0cb77d4683dddaeffc1f847, type: 3}
+        m_Texture: {fileID: 2800000, guid: 127de19ea18c5ad448353d54c1e40851, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1cbd414b50bd2aa4da9be14ac01243a6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 659faaba698dedc49a216db04ab7b751, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowTex:
-        m_Texture: {fileID: 2800000, guid: 42a7603058e3dcc4db01520655c5d643, type: 3}
+        m_Texture: {fileID: 2800000, guid: dab7cf2646ac92d4aba9701ef38fc624, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
-        m_Texture: {fileID: 2800000, guid: 8dd7c0ef8df4a6c43ada4b32c21f2094, type: 3}
+        m_Texture: {fileID: 2800000, guid: f7248d014a4c89d41bda45d2056da79f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -844,6 +847,7 @@ Material:
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!21 &3893337042138437010
 Material:
   serializedVersion: 8
@@ -868,15 +872,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpSpecMap:
-        m_Texture: {fileID: 2800000, guid: b9fb1b77a0cb77d4683dddaeffc1f847, type: 3}
+        m_Texture: {fileID: 2800000, guid: 127de19ea18c5ad448353d54c1e40851, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1cbd414b50bd2aa4da9be14ac01243a6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 659faaba698dedc49a216db04ab7b751, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
-        m_Texture: {fileID: 2800000, guid: 8dd7c0ef8df4a6c43ada4b32c21f2094, type: 3}
+        m_Texture: {fileID: 2800000, guid: f7248d014a4c89d41bda45d2056da79f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -889,3 +893,4 @@ Material:
     - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

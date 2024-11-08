@@ -19,8 +19,7 @@ public class SunMonitor : MonoBehaviour
     public bool Repeating = true;
     [SerializeField] private float sunRraycastHightFactor = 1f;
 
-    [SerializeField] private AudioClip damageSoundClip;
-    private AudioSource audioSource;
+    [SerializeField] private AudioClip burningSoundClip;
 
     private void Awake()
     {
@@ -35,7 +34,6 @@ public class SunMonitor : MonoBehaviour
     {
         playerRenderer = GetComponent<Renderer>();
 
-        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -67,8 +65,8 @@ public class SunMonitor : MonoBehaviour
             {
                 _isCausingDamage = true;
                 PlayerController player = gameObject.GetComponent<PlayerController>();
+                //SoundEffectManager.instance.PlaySoundFXClip(burningSoundClip, transform, 1f);
 
-                
 
                 if (player != null)
                 {
@@ -94,6 +92,9 @@ public class SunMonitor : MonoBehaviour
     {
         repeatRate = DamageRepeatRate;
         player.TakeDamage(DamageAmount);
+
+        //burning soundeffect
+        //SoundEffectManager.instance.PlaySoundFXClip(burningSoundClip, transform, 1f);
 
         if (player.IsDead)
             _isCausingDamage = false;

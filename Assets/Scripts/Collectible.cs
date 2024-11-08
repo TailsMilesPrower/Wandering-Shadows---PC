@@ -9,7 +9,7 @@ public class Collectible : MonoBehaviour
     public static event Action OnCollected;
     public static int total;
 
-
+    [SerializeField] private AudioClip collectSoundClip;
     private void Awake()
     {
         total = 3;
@@ -23,6 +23,9 @@ public class Collectible : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        // Play SoundFX
+        SoundEffectManager.instance.PlaySoundFXClip(collectSoundClip, transform, 1f);
+
         if (other.CompareTag("Player"))
         {
             OnCollected?.Invoke();

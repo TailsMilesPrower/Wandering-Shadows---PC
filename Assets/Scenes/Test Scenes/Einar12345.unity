@@ -132,6 +132,10 @@ PrefabInstance:
       value: Fence (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6164
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_LocalScale.y
       value: 8.39
       objectReference: {fileID: 0}
@@ -358,6 +362,10 @@ PrefabInstance:
     - target: {fileID: 5881314879111187153, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_Name
       value: Fence (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6164
       objectReference: {fileID: 0}
     - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_LocalScale.y
@@ -1071,6 +1079,10 @@ PrefabInstance:
       value: Fence (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6164
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_LocalScale.y
       value: 8.39
       objectReference: {fileID: 0}
@@ -1163,6 +1175,10 @@ PrefabInstance:
     - target: {fileID: 5881314879111187153, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_Name
       value: Fence (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6164
       objectReference: {fileID: 0}
     - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_LocalScale.y
@@ -1482,6 +1498,10 @@ PrefabInstance:
     - target: {fileID: 5881314879111187153, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_Name
       value: Fence (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6164
       objectReference: {fileID: 0}
     - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_LocalScale.y
@@ -2083,6 +2103,10 @@ PrefabInstance:
       value: Fence (7)
       objectReference: {fileID: 0}
     - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6164
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_LocalScale.y
       value: 8.39
       objectReference: {fileID: 0}
@@ -2283,6 +2307,10 @@ PrefabInstance:
     - target: {fileID: 5881314879111187153, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_Name
       value: Fence
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6164
       objectReference: {fileID: 0}
     - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_LocalScale.y
@@ -2531,6 +2559,10 @@ PrefabInstance:
     - target: {fileID: 5881314879111187153, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_Name
       value: Fence (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6164
       objectReference: {fileID: 0}
     - target: {fileID: 7614178438016867325, guid: cdf7fbcf3d0f7aa41994320cb4ce3a2f, type: 3}
       propertyPath: m_LocalScale.y

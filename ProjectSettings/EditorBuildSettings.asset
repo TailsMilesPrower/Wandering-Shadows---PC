@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/PrototypeScenes/TutorialScene.unity
     guid: c4271f5409ec51a4ca83204ff8066860
   - enabled: 1
-    path: Assets/Scenes/PrototypeScenes/Level8.unity
+    path: Assets/Scenes/PrototypeScenes/1st_Level.unity
     guid: 97306e3320d5bf542b9bc23113816724
   - enabled: 1
-    path: Assets/Scenes/PrototypeScenes/Simple_Prototype_Scene.unity
+    path: Assets/Scenes/PrototypeScenes/3rd_Level.unity
     guid: 95c137f6f6ec8c047ba7440f339a1005
   - enabled: 1
     path: Assets/Scenes/Test Scenes/Level 1-1 Lara.unity
@@ -24,13 +24,13 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScenes/EndMenu.unity
     guid: 17fb38c1b5616ac47bc1e6deaca29e5f
   - enabled: 0
-    path: Assets/Scenes/PrototypeScenes/Level1-0.unity
+    path: Assets/Scenes/PrototypeScenes/2nd_Level.unity
     guid: 6187c0898d55bec4f997833afc51ded2
   - enabled: 0
     path: Assets/Scenes/Test Scenes/S_HilmirPrototype.unity
     guid: 489ff2710b9cdd949864a70572a4c3fc
   - enabled: 0
-    path: Assets/Scenes/PrototypeScenes/OfficialPrototype.unity
+    path: Assets/Scenes/PrototypeScenes/4th_LevelUPDATEIT.unity
     guid: 2c5f366a65bb6424fac88b054083e1be
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}

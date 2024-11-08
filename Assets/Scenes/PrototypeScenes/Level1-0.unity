@@ -492,7 +492,7 @@ PrefabInstance:
       objectReference: {fileID: 1829505522}
     - target: {fileID: 7503625447058638574, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_Name
-      value: VampirePrefab (1)
+      value: VampirePrefab
       objectReference: {fileID: 0}
     - target: {fileID: 8160085400553935140, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: dirLight

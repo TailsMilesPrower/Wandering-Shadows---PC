@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private HealthBar mHealthBar;
     public HUD Hud;
     public int Health = 100;
+    public bool isHiding;
 
     // Start is called before the first frame update
 
@@ -31,16 +32,16 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        bool isHiding;
         Health -= amount;
         if (Health < 0)
             Health = 0;
-        
         
         mHealthBar.SetHealth(Health);
 
         if (IsDead)
         {
-            
+            isHiding = false;
             StartCoroutine(PlaydeathSound());
             
         }

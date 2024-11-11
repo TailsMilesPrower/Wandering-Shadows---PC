@@ -8,6 +8,7 @@ public class EndOfLevelManager : MonoBehaviour
 {
     //Reference to the EndOfLevelPrefab
     public GameObject endOfLevelMenu;
+    //public GameObject inGameDisplay;
 
     //Bool to check if the game is paused
     public static bool Paused = false;
@@ -46,6 +47,7 @@ public class EndOfLevelManager : MonoBehaviour
     {
         //Activates the pause menu
         endOfLevelMenu.SetActive(true);
+        
         //Freezes time
         Time.timeScale = 0f;
         //Pauses the game

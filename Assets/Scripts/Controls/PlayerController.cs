@@ -39,8 +39,9 @@ public class PlayerController : MonoBehaviour
 
         if (IsDead)
         {
-            StartCoroutine(PlaydeathSound());
-            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+            //StartCoroutine(PlaydeathSound());
+
         }
         //Play Burning soundeffect
        
@@ -48,13 +49,13 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    IEnumerator PlaydeathSound()
+    /*IEnumerator PlaydeathSound()
     {
         SoundEffectManager.instance.PlaySoundFXClip(deathSoundClip, transform, 1f);
 
         yield return new WaitUntil(()  => deathSoundClip == false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
-    }
+    }*/
 
     public void start()
     {

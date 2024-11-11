@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         get
         {
-            return Health == 1;
+            return Health == 0;
         }
     }
 
@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
 
         if (IsDead)
         {
+
             isHiding = false;
             StartCoroutine(PlaydeathSound());
             

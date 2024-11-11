@@ -4,16 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PauseMenu : MonoBehaviour
+public class EndOfLevelManager : MonoBehaviour
 {
+    //Reference to the EndOfLevelPrefab
     public GameObject endOfLevelMenu;
 
-    public bool IsDead;
     //Bool to check if the game is paused
     public static bool Paused = false;
 
-    //A refrence to the pause menu canvas
-    public GameObject PauseMenuCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +21,7 @@ public class PauseMenu : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         //If you press the escape key
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -38,16 +36,16 @@ public class PauseMenu : MonoBehaviour
             else
             {
                 //The game is paused
-                Stop();
+                Finish();
             }
         }
-    }
+    }*/
 
     //Function for pausing the game
-    void Stop()
+    public void Finish()
     {
         //Activates the pause menu
-        PauseMenuCanvas.SetActive(true);
+        endOfLevelMenu.SetActive(true);
         //Freezes time
         Time.timeScale = 0f;
         //Pauses the game
@@ -57,7 +55,7 @@ public class PauseMenu : MonoBehaviour
     public void Play()
     {
         //Deactivates the pause menu
-        PauseMenuCanvas.SetActive(false);
+        endOfLevelMenu.SetActive(false);
         //Resumes the time
         Time.timeScale = 1f;
         //Unpauses the game
@@ -65,6 +63,26 @@ public class PauseMenu : MonoBehaviour
     }
 
     //Function for going to the main menu
+    public void ResetLevel()
+    {
+        //Resumes the time
+        Time.timeScale = 1f;
+        //Unpauses the game
+        Paused = false;
+        //Loads the main menu
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+    }
+
+    public void NextLevel()
+    {
+        //Resumes the time
+        Time.timeScale = 1f;
+        //Unpauses the game
+        Paused = false;
+        //Loads the main menu
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     public void MainMenuButton()
     {
         //Resumes the time

@@ -5,7 +5,7 @@ public class BarrelScript : MonoBehaviour
     public MeshRenderer playerHide;
     public MeshRenderer playerUnhide;
     [SerializeField]
-    public PlayerController playerController;
+    public SunMonitor sunMonitor;
     private void OnTriggerEnter(Collider collider)
     {
         playerHide.enabled = false;

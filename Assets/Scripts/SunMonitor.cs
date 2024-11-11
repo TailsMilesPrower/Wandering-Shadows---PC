@@ -17,6 +17,7 @@ public class SunMonitor : MonoBehaviour
     public float DamageRepeatRate = 0.3f;
     public int DamageAmount = 1;
     public bool Repeating = true;
+    public bool isHiding;
     [SerializeField] private float sunRraycastHightFactor = 1f;
 
     [SerializeField] private AudioClip burningSoundClip;
@@ -51,6 +52,7 @@ public class SunMonitor : MonoBehaviour
                 PlayerController player = gameObject.GetComponent<PlayerController>();
                 if (player != null)
                 {
+                    isHiding = true;
                     _isCausingDamage = false;
                 }
             }
@@ -63,6 +65,7 @@ public class SunMonitor : MonoBehaviour
 
             //Dmg from sun
             {
+                isHiding = false;
                 _isCausingDamage = true;
                 PlayerController player = gameObject.GetComponent<PlayerController>();
                 //SoundEffectManager.instance.PlaySoundFXClip(burningSoundClip, transform, 1f);

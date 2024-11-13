@@ -67,7 +67,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 3405cde5ce026e642a2f6217700aee6a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: c93fcd96d2835f74bb67dd72be174242, type: 2}
+      objectReference: {fileID: 2100000, guid: c6801092cab997b43af71a352e757f78, type: 2}
+    - target: {fileID: -5754084199372789682, guid: 3405cde5ce026e642a2f6217700aee6a, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -6427508854630830185, guid: 3a4235a55d32d6644a3ed4a9e7475194, type: 3}
     - target: {fileID: 919132149155446097, guid: 3405cde5ce026e642a2f6217700aee6a, type: 3}
       propertyPath: m_Name
       value: Church
@@ -111,11 +115,11 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 2.138, y: 6.2190003, z: 5.9900002}
+  m_Extents: {x: 4.24, y: 4.72, z: 9.6}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: 2.3300002, y: 6.3, z: -5.833}
+  m_Center: {x: -4, y: 4.8, z: -9.5}
   m_TimeToStationary: 0.5
 --- !u!65 &1304781783320634001
 BoxCollider:
@@ -136,8 +140,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.9468498, y: 4.433772, z: 9.497807}
-  m_Center: {x: 2.3699882, y: 2.298779, z: -7.07404}
+  m_Size: {x: 8.008541, y: 7.2560515, z: 15.118713}
+  m_Center: {x: -3.8930101, y: 3.7099187, z: -11.452126}
 --- !u!65 &164675759468542080
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -157,8 +161,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5247949, y: 1.7448924, z: 9.370032}
-  m_Center: {x: 2.302159, y: 5.40005, z: -7.137927}
+  m_Size: {x: 1.433847, y: 3.7557182, z: 17.532984}
+  m_Center: {x: -3.967995, y: 8.243265, z: -10.101998}
 --- !u!65 &4743681462296253940
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -178,8 +182,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.101613, y: 9.913533, z: 2.5823236}
-  m_Center: {x: 2.324527, y: 5.0386615, z: -1.1341922}
+  m_Size: {x: 4.627906, y: 15.855661, z: 3.9923985}
+  m_Center: {x: -4.0284085, y: 8.009725, z: -1.9634084}
 --- !u!65 &5389491144471091225
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -199,5 +203,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.22314088, y: 2.6079593, z: 2.6739526}
-  m_Center: {x: 2.3132548, y: 11.215134, z: -1.1800134}
+  m_Size: {x: 0.54825306, y: 4.3541183, z: 4.295916}
+  m_Center: {x: -4.032221, y: 17.800354, z: -1.9909952}

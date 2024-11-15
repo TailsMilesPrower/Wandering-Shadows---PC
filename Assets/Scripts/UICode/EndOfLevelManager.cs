@@ -101,13 +101,13 @@ public class EndOfLevelManager : MonoBehaviour
     public void PauseMenu()
     {
         //Activates the pause menu
-        pauseMenu.SetActive(true);
 
         //Freezes time
         Time.timeScale = 0f;
         //Pauses the game
         Paused = true;
-       
+        SceneManager.LoadScene("PauseMenu");
+
     }
 
     public void SettingsMenu()

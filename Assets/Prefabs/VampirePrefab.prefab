@@ -4962,12 +4962,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   dirLight: {fileID: 0}
-  burningAnimation: {fileID: 0}
+  burningAnimation: {fileID: 1361098449858651499}
   DamageRepeatRate: 0.05
   DamageAmount: 1
   Repeating: 1
-  isHiding: 0
   sunRraycastHightFactor: 1
+  sFX_Play: 0
 --- !u!114 &5764383921166094365
 MonoBehaviour:
   m_ObjectHideFlags: 0

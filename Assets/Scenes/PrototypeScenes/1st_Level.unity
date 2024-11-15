@@ -231,6 +231,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2741347817823998763, guid: 3ecc753e159603b49a37d32f511c58fc, type: 3}
+--- !u!1 &290670386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1361098449858651499, guid: f8b76540710319049bf3095be54a539f, type: 3}
+  m_PrefabInstance: {fileID: 1144688585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &304292409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5752915553953570256, guid: f8b76540710319049bf3095be54a539f, type: 3}
@@ -457,7 +462,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 500968103782929182, guid: 9ea26cad73240ab4fb2c1195fca7fb0d, type: 3}
   m_PrefabInstance: {fileID: 481942845}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1940101999}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a3fe46574f88de458f442c8f0e54c73, type: 3}
@@ -684,6 +689,10 @@ PrefabInstance:
       propertyPath: dirLight
       value: 
       objectReference: {fileID: 388214708}
+    - target: {fileID: 8160085400553935140, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: burningAnimation
+      value: 
+      objectReference: {fileID: 290670386}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1000,11 +1009,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce7a16772a98f2048b16ad6b0b05134b, type: 3}
---- !u!1 &1940101999 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2635739541741324334, guid: 9ea26cad73240ab4fb2c1195fca7fb0d, type: 3}
-  m_PrefabInstance: {fileID: 481942845}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2085034894
 PrefabInstance:
   m_ObjectHideFlags: 0

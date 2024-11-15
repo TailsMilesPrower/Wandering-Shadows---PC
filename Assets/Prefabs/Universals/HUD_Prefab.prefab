@@ -637,7 +637,6 @@ GameObject:
   - component: {fileID: 6491468291280179607}
   - component: {fileID: 1057346101626960559}
   - component: {fileID: 345751980073150400}
-  - component: {fileID: 8894757197823090868}
   m_Layer: 5
   m_Name: HUD_Prefab
   m_TagString: Untagged
@@ -747,22 +746,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &345751980073150400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2200469569518783308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7455ed2312f7644d99b48a8726b99be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ImgHealthBar: {fileID: 4840780021503788827}
-  Health: {fileID: 2439307490758257471}
-  Min: 0
-  Max: 100
---- !u!114 &8894757197823090868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2074,7 +2057,7 @@ GameObject:
   - component: {fileID: 8938700082484605227}
   - component: {fileID: 4269801372367701684}
   - component: {fileID: 6072186054854555649}
-  m_Layer: 7
+  m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -196,10 +196,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD_Prefab
       objectReference: {fileID: 0}
-    - target: {fileID: 2941214224505223489, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3867262178761917110, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -280,10 +276,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6963902758480838996, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 6072186054854555649, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1410738645}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

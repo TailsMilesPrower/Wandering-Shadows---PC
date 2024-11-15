@@ -1608,6 +1608,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 903634674}
+    - target: {fileID: 1398171633221923379, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2200469569518783308, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
       propertyPath: m_Name
       value: HUD_Prefab
@@ -1718,12 +1722,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3867262178761917110, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1760564458}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2200469569518783308, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1399930726}
   m_SourcePrefab: {fileID: 100100000, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+--- !u!224 &1548758612 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3867262178761917110, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+  m_PrefabInstance: {fileID: 1548758611}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1717265187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1863,7 +1875,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760564454}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
@@ -1875,7 +1887,7 @@ RectTransform:
   - {fileID: 2033993160}
   - {fileID: 1428633524}
   - {fileID: 1009525909}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1548758612}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2268,5 +2280,4 @@ SceneRoots:
   - {fileID: 1071428236}
   - {fileID: 5458767840919775729}
   - {fileID: 3573232979053728135}
-  - {fileID: 1760564458}
   - {fileID: 1487690041}

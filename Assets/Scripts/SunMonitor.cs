@@ -11,13 +11,13 @@ public class SunMonitor : MonoBehaviour
     public Light dirLight;
     private Vector3 oppositeDirection;
     private Renderer playerRenderer;
+    public GameObject burningAnimation;
 
-
+    private bool isBurning;
     private bool _isCausingDamage = false;
     public float DamageRepeatRate = 0.3f;
     public int DamageAmount = 1;
     public bool Repeating = true;
-    public bool isHiding;
     
     
     //SOUNDS
@@ -41,6 +41,7 @@ public class SunMonitor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isBurning = burningAnimation;
         playerRenderer = GetComponent<Renderer>();
         burningSoundSource = GetComponent<AudioSource>();
         sFX_Play = true;
@@ -65,8 +66,7 @@ public class SunMonitor : MonoBehaviour
                 PlayerController player = gameObject.GetComponent<PlayerController>();
                 if (player != null)
                 {
-                    
-                    isHiding = true;
+                    burningAnimation.SetActive(false);
                     _isCausingDamage = false;
                 }
             }
@@ -81,7 +81,7 @@ public class SunMonitor : MonoBehaviour
 
             //Dmg from sun
             {
-                isHiding = false;
+                isBurning = true;
                 _isCausingDamage = true;
                 PlayerController player = gameObject.GetComponent<PlayerController>();
                 //SoundEffectManager.instance.PlaySoundFXClip(burningSoundClip, transform, 1f);
@@ -93,8 +93,9 @@ public class SunMonitor : MonoBehaviour
 
                     if (_isCausingDamage && _nextTimeTimerTriggers < Time.realtimeSinceStartup)
                     {
-                        
-                            // Do the thing!
+
+                        // Do the thing!
+                        burningAnimation.SetActive(true);
                         TakeDamage(player, DamageRepeatRate);
 
                             _nextTimeTimerTriggers = Time.realtimeSinceStartup + DamageRepeatRate;

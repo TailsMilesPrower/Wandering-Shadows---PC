@@ -6,16 +6,17 @@ TagManager:
   tags:
   - Building
   - Enemy
+  - Ground
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - BlockRaycast
   - Walkable
-  - 
+  - Player
   - 
   - 
   - 

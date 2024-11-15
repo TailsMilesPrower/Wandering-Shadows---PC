@@ -18,10 +18,17 @@ public class SunMonitor : MonoBehaviour
     public int DamageAmount = 1;
     public bool Repeating = true;
     public bool isHiding;
+    
+    
+    //SOUNDS
     [SerializeField] private float sunRraycastHightFactor = 1f;
 
-    [SerializeField] private AudioClip burningSoundClip;
+    //[SerializeField] private AudioClip burningSoundClip;
+
     AudioSource burningSoundSource;
+    //bool sFX_Play;
+
+
 
     private void Awake()
     {
@@ -35,7 +42,9 @@ public class SunMonitor : MonoBehaviour
     void Start()
     {
         playerRenderer = GetComponent<Renderer>();
-
+        burningSoundSource = GetComponent<AudioSource>();
+        //sFX_Play = false;
+        //burningSoundSource.Stop();
     }
 
     // Update is called once per frame
@@ -48,11 +57,15 @@ public class SunMonitor : MonoBehaviour
            // Debug.DrawRay(transform.position, oppositeDirection * hit.distance, Color.green);
             playerRenderer.material.color = Color.green;
 
+            //sFX_Play = false;
+            //burningSoundSource.Stop();
+            burningSoundSource.Play();
             //No Dmg from sun
             {
                 PlayerController player = gameObject.GetComponent<PlayerController>();
                 if (player != null)
                 {
+                    
                     isHiding = true;
                     _isCausingDamage = false;
                 }
@@ -62,6 +75,9 @@ public class SunMonitor : MonoBehaviour
         {
             Debug.DrawRay(transform.position, oppositeDirection * 50f, Color.red);
             playerRenderer.material.color= Color.red;
+
+            //sFX_Play = true;
+            //burningSoundSource.Play();
 
 
             //Dmg from sun

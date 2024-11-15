@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5157087401245036956}
   - component: {fileID: 500968103782929182}
   m_Layer: 0
-  m_Name: EndOfLevelManager
+  m_Name: MenulManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,4 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a3fe46574f88de458f442c8f0e54c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endOfLevelMenu: {fileID: 0}
+  endOfLevelMenu: {fileID: 2596923385165409910, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+  pauseMenu: {fileID: 0}
+  ChooseMenu: {fileID: 0}
+  HowToPc: {fileID: 0}

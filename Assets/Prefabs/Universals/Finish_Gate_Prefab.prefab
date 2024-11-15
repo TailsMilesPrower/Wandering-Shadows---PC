@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6341e25a5f5cd4a846b5cdab321a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endOfLevelManager: {fileID: 0}
+  endOfLevelManager: {fileID: 500968103782929182, guid: 9ea26cad73240ab4fb2c1195fca7fb0d, type: 3}
   finishClip: {fileID: 8300000, guid: 99fa06ddc4b766e4c98139683ee4783a, type: 3}
 --- !u!82 &2130098644894752476
 AudioSource:

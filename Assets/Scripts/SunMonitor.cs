@@ -26,7 +26,7 @@ public class SunMonitor : MonoBehaviour
     //[SerializeField] private AudioClip burningSoundClip;
 
     AudioSource burningSoundSource;
-    //bool sFX_Play;
+    public bool sFX_Play;
 
 
 
@@ -43,7 +43,7 @@ public class SunMonitor : MonoBehaviour
     {
         playerRenderer = GetComponent<Renderer>();
         burningSoundSource = GetComponent<AudioSource>();
-        //sFX_Play = false;
+        sFX_Play = true;
         //burningSoundSource.Stop();
     }
 
@@ -77,7 +77,6 @@ public class SunMonitor : MonoBehaviour
             playerRenderer.material.color= Color.red;
 
             //sFX_Play = true;
-            //burningSoundSource.Play();
 
 
             //Dmg from sun

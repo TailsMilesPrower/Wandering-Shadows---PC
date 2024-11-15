@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 public class FinishLine : MonoBehaviour
 {
     public EndOfLevelManager endOfLevelManager;
-
-   public void OnTriggerEnter(Collider collision)
+    [SerializeField] private AudioClip finishClip;
+    public void OnTriggerEnter(Collider collision)
     {
         if(collision.tag == "Player")
         {
+            SoundEffectManager.instance.PlaySoundFXClip(finishClip, transform, 1f);
             Debug.Log("Finish!");
             // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             endOfLevelManager.Finish();

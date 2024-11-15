@@ -21,7 +21,7 @@ public class SunMonitor : MonoBehaviour
     [SerializeField] private float sunRraycastHightFactor = 1f;
 
     [SerializeField] private AudioClip burningSoundClip;
-    public GameObject burningSound;
+    AudioSource burningSoundSource;
 
     private void Awake()
     {

@@ -9,6 +9,8 @@ public class EndOfLevelManager : MonoBehaviour
     //Reference to the EndOfLevelPrefab
     public GameObject endOfLevelMenu;
     public GameObject pauseMenu;
+    public GameObject ChooseMenu;
+    public GameObject HowToPc;
     //public GameObject inGameDisplay;
 
     //Bool to check if the game is paused
@@ -105,5 +107,36 @@ public class EndOfLevelManager : MonoBehaviour
         Time.timeScale = 0f;
         //Pauses the game
         Paused = true;
+       
     }
+
+    public void SettingsMenu()
+    {
+        //Resumes the time
+        Time.timeScale = 1f;
+        //Unpauses the game
+        Paused = false;
+        //Loads the main menu
+        SceneManager.LoadScene("SettingsMenu");
+    }
+
+    public void HowToPlayButton()
+    {
+        //Activates the pause menu
+        ChooseMenu.SetActive(true);
+        //Freezes time
+        Time.timeScale = 0f;
+        //Pauses the game
+        Paused = true;
+}
+
+public void PCButton()
+    {
+        //Activates the pause menu
+        HowToPc.SetActive(true);
+        //Freezes time
+        Time.timeScale = 0f;
+        //Pauses the game
+        Paused = true;
+}
 }

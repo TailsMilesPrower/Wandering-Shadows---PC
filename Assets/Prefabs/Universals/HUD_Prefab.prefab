@@ -1497,7 +1497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2817344262272695076}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: EndOfLevelManager, Assembly-CSharp
+        m_MethodName: PauseMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5149886056362956240
 GameObject:
   m_ObjectHideFlags: 0
@@ -2039,9 +2051,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+        m_TargetAssemblyTypeName: EndOfLevelManager, Assembly-CSharp
+        m_MethodName: SettingsMenu
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2573,7 +2585,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5270036632506699390}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: EndOfLevelManager, Assembly-CSharp
+        m_MethodName: PCButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &721919723389882472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3135,6 +3159,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3867262178761917110}
     m_Modifications:
+    - target: {fileID: 147099357794700386, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 147099357794700386, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 147099357794700386, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 147099357794700386, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SettingsMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 147099357794700386, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EndOfLevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 147099357794700386, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1306140823378149171, guid: 528bb7e826710ca4d90545436016059d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3244,6 +3292,30 @@ PrefabInstance:
       value: EndOfLevelManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4192454564759462394, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116436352030988314, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116436352030988314, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116436352030988314, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116436352030988314, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HowToPlayButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116436352030988314, guid: 528bb7e826710ca4d90545436016059d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EndOfLevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116436352030988314, guid: 528bb7e826710ca4d90545436016059d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}

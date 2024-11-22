@@ -11,9 +11,14 @@ public class PlayerController : MonoBehaviour
     public int Health = 100;
     public EndOfLevelManager endOfLevelManager;
 
-    public GameObject deathAnim_1;
-    public MeshRenderer rend;
+    public DeathAnims[] deathAnim;
+    private int animIndex;
 
+    public MeshRenderer rendVamp;
+    public MeshRenderer rendHitBox;
+    public MeshRenderer rendTargetDest;
+
+    private GameObject deathAnimation;
   
     private int killSwitch = 1;
 
@@ -28,7 +33,9 @@ public class PlayerController : MonoBehaviour
         mHealthBar.Max = Health;
 
  
-        rend.enabled = true;
+        rendVamp.enabled = true;
+        rendHitBox.enabled = true;
+        animIndex = random.Range(0,DeathAnims.Length-1);
     }
 
     public bool IsDead
@@ -67,11 +74,19 @@ public class PlayerController : MonoBehaviour
     {
         SoundEffectManager.instance.PlaySoundFXClip(deathClip, transform, 1f);
 
-        rend.enabled = false;
+        rendVamp.enabled = false;
+        rendHitBox.enabled = false;
+        rendTargetDest.enabled = false;
 
-        Instantiate(deathAnim_1, transform.position, Quaternion.identity);
 
-        yield return new WaitForSeconds(5f);
+        deathAnimation = Instantiate(DeathAnims[animIndex], transform.position, Quaternion.identity);
+        Debug.Log("Playing...");
+        yield return new WaitForSeconds(3f);
+        
+        Destroy(deathAnimation);
+        Debug.Log("Chonk");
+        yield return new WaitForSeconds(2f);
+        Debug.Log("And done");
         endOfLevelManager.GameOver();
     }
 

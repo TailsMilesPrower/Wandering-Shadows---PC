@@ -117,6 +117,10 @@ public class SunMonitor : MonoBehaviour
         //SoundEffectManager.instance.PlaySoundFXClip(burningSoundClip, transform, 1f);
 
         if (player.IsDead)
+        {
             _isCausingDamage = false;
+            Destroy(burningSoundSource);
+            burningAnimation.SetActive(false);
+        }
     }
 }

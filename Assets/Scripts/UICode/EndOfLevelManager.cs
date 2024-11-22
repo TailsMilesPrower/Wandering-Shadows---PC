@@ -11,6 +11,9 @@ public class EndOfLevelManager : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject ChooseMenu;
     public GameObject HowToPc;
+    public GameObject gameOverlay;
+
+    
     //public GameObject inGameDisplay;
 
     //Bool to check if the game is paused
@@ -24,6 +27,21 @@ public class EndOfLevelManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
+    /*private void OnEnable()
+    {
+        Collectible.OnCollected += OnCollectibleCollected;
+    }
+
+    private void OnDisable()
+    {
+        Collectible.OnCollected += OnCollectibleCollected;
+    }
+
+    void OnCollectibleCollected()
+    {
+        count++;
+        UpdateCount();
+    }*/
     // Update is called once per frame
     /*void Update()
     {
@@ -50,11 +68,14 @@ public class EndOfLevelManager : MonoBehaviour
     {
         //Activates the pause menu
         endOfLevelMenu.SetActive(true);
-        
+
+        //Deactivates the HUD
+        gameOverlay.SetActive(false);
         //Freezes time
         Time.timeScale = 0f;
         //Pauses the game
         Paused = true;
+        
     }
     //Function for resuming the game
     public void Play()

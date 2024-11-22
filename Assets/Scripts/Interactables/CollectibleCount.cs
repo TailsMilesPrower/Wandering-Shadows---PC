@@ -5,6 +5,13 @@ using TMPro;
 
 public class CollectibleCount : MonoBehaviour
 {
+    public GameObject star1;
+    public GameObject star2;
+    public GameObject star3;
+    
+    public GameObject endStar1;
+    public GameObject endStar2;
+    public GameObject endStar3;
     TMPro.TMP_Text text;
     int count;
 
@@ -36,7 +43,22 @@ public class CollectibleCount : MonoBehaviour
 
     void UpdateCount()
     {
-        text.text = "Fruits collected " + $"{count} / {Collectible.total}";
+        //text.text = "Fruits collected " + $"{count} / {Collectible.total}";
+        if(count == 1)
+        {
+            star1.SetActive(true);
+            endStar1.SetActive(true);
+        }
+        if (count == 2)
+            { 
+            star2.SetActive(true);
+            endStar2.SetActive(true);
+            }
+        if (count == 3)
+            { 
+            star3.SetActive(true);
+            endStar3.SetActive(true);
+            }
     }
 
     /*[SerializeField] Collectible OnCollected;

@@ -5,11 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private AudioClip deathSoundClip;
+    [SerializeField] private AudioClip deathClip;
     private HealthBar mHealthBar;
     public HUD gameOverlay;
     public int Health = 100;
     public EndOfLevelManager endOfLevelManager;
+
+    public GameObject deathAnim_1;
+    public MeshRenderer rend;
+
+  
+    private int killSwitch = 1;
+
+    
 
     // Start is called before the first frame update
 
@@ -19,7 +27,8 @@ public class PlayerController : MonoBehaviour
         mHealthBar.Min = 0;
         mHealthBar.Max = Health;
 
-        
+ 
+        rend.enabled = true;
     }
 
     public bool IsDead
@@ -40,10 +49,13 @@ public class PlayerController : MonoBehaviour
 
         if (IsDead)
         {
-
-            endOfLevelManager.GameOver();
-            //StartCoroutine(PlaydeathSound());
-
+            if (killSwitch > 0)
+            {
+               
+                //endOfLevelManager.GameOver();
+                killSwitch -= 1;
+                StartCoroutine(PlayDeathAnim());
+            }
         }
         //Play Burning soundeffect
        
@@ -51,16 +63,16 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    /*IEnumerator PlaydeathSound()
+    IEnumerator PlayDeathAnim()
     {
-        SoundEffectManager.instance.PlaySoundFXClip(deathSoundClip, transform, 1f);
+        SoundEffectManager.instance.PlaySoundFXClip(deathClip, transform, 1f);
 
-        yield return new WaitUntil(()  => deathSoundClip == false);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
-    }*/
+        rend.enabled = false;
 
-    public void start()
-    {
+        Instantiate(deathAnim_1, transform.position, Quaternion.identity);
 
+        yield return new WaitForSeconds(5f);
+        endOfLevelManager.GameOver();
     }
+
 }

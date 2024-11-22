@@ -288,7 +288,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 79, y: -270}
+  m_AnchoredPosition: {x: 103, y: -410}
   m_SizeDelta: {x: 160, y: 244.1509}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &146868453
@@ -841,7 +841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 55, y: 920}
+  m_AnchoredPosition: {x: 86, y: 1118}
   m_SizeDelta: {x: 160, y: 244.1509}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &567856793
@@ -972,8 +972,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 30, y: 141}
-  m_SizeDelta: {x: 700, y: 351.84912}
+  m_AnchoredPosition: {x: 38.531677, y: 142.70642}
+  m_SizeDelta: {x: 717.0634, y: 723.8279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &571815488
 MonoBehaviour:
@@ -1305,7 +1305,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110, y: -662}
+  m_AnchoredPosition: {x: 110, y: -812}
   m_SizeDelta: {x: 160, y: 244.1509}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &988242654
@@ -1687,8 +1687,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30.1624, y: 120.734604}
-  m_SizeDelta: {x: 440.3255, y: 1960.5}
+  m_AnchoredPosition: {x: 30.1624, y: 161.46843}
+  m_SizeDelta: {x: 440.3255, y: 2329.535}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1107245506
 MonoBehaviour:
@@ -2632,7 +2632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 115, y: 624}
+  m_AnchoredPosition: {x: 101, y: 747}
   m_SizeDelta: {x: 160, y: 244.1509}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2131144475

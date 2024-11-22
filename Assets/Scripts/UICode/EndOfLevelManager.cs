@@ -14,6 +14,8 @@ public class EndOfLevelManager : MonoBehaviour
     public GameObject gameOverlay;
     public GameObject gameOver;
 
+    [SerializeField] private AudioClip deathClip;
+
 
     //public GameObject inGameDisplay;
 
@@ -179,6 +181,7 @@ public class EndOfLevelManager : MonoBehaviour
 
     public void GameOver()
     {
+        SoundEffectManager.instance.PlaySoundFXClip(deathClip, transform, 1f);
         //Activates GameOverMenu
         gameOver.SetActive(true);
         //Deactivates the HUD

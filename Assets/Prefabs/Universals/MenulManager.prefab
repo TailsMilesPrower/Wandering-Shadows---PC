@@ -50,3 +50,4 @@ MonoBehaviour:
   HowToPc: {fileID: 0}
   gameOverlay: {fileID: 0}
   gameOver: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 08be019fa0418804e89ff8a2e8bc793c, type: 3}

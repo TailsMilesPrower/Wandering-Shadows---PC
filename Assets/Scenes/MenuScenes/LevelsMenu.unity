@@ -888,9 +888,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 337415056}
+      - m_Target: {fileID: 337415058}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: GoToScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2603,9 +2603,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 843317002}
+      - m_Target: {fileID: 843317004}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: GoToScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

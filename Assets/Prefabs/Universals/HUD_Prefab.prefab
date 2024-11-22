@@ -117,6 +117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOverlay
       objectReference: {fileID: 0}
+    - target: {fileID: 4605589894366294908, guid: f458f7f6e5c445049922bf0bcba08815, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8594511431511359689, guid: f458f7f6e5c445049922bf0bcba08815, type: 3}
       propertyPath: endStar1
       value: 

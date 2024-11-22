@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
         if (IsDead)
         {
+
             endOfLevelManager.GameOver();
             //StartCoroutine(PlaydeathSound());
 

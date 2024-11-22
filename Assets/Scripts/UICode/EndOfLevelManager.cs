@@ -12,8 +12,9 @@ public class EndOfLevelManager : MonoBehaviour
     public GameObject ChooseMenu;
     public GameObject HowToPc;
     public GameObject gameOverlay;
+    public GameObject gameOver;
 
-    
+
     //public GameObject inGameDisplay;
 
     //Bool to check if the game is paused
@@ -75,7 +76,7 @@ public class EndOfLevelManager : MonoBehaviour
         Time.timeScale = 0f;
         //Pauses the game
         Paused = true;
-        
+
     }
     //Function for resuming the game
     public void Play()
@@ -122,13 +123,28 @@ public class EndOfLevelManager : MonoBehaviour
     public void PauseMenu()
     {
         //Activates the pause menu
+        pauseMenu.SetActive(true);
 
+        //Deactivates the HUD
+        gameOverlay.SetActive(false);
         //Freezes time
         Time.timeScale = 0f;
         //Pauses the game
         Paused = true;
-        SceneManager.LoadScene("PauseMenu");
 
+    }
+
+    public void UnPause()
+    {
+        //Activates the pause menu
+        pauseMenu.SetActive(false);
+
+        //Deactivates the HUD
+        gameOverlay.SetActive(true);
+        //UnFreezes time
+        Time.timeScale = 1f;
+        //Pauses the game
+        Paused = false;
     }
 
     public void SettingsMenu()
@@ -149,9 +165,9 @@ public class EndOfLevelManager : MonoBehaviour
         Time.timeScale = 0f;
         //Pauses the game
         Paused = true;
-}
+    }
 
-public void PCButton()
+    public void PCButton()
     {
         //Activates the pause menu
         HowToPc.SetActive(true);
@@ -159,5 +175,24 @@ public void PCButton()
         Time.timeScale = 0f;
         //Pauses the game
         Paused = true;
-}
+    }
+
+    public void GameOver()
+    {
+        //Activates GameOverMenu
+        gameOver.SetActive(true);
+        //Deactivates the HUD
+        gameOverlay.SetActive(false);
+        //Freezes time
+        Time.timeScale = 0f;
+        //Pauses the game
+        Paused = true;
+    }
+
+    //Quit game
+    public void EndGame()
+    {
+        Application.Quit();
+    }
+
 }

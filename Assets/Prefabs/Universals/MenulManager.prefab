@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endOfLevelMenu: {fileID: 2596923385165409910, guid: 528bb7e826710ca4d90545436016059d, type: 3}
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 7109605265962991767, guid: d4c4a9c1fd0df794a830090c95999dcb, type: 3}
   ChooseMenu: {fileID: 0}
   HowToPc: {fileID: 0}
-  hUD: {fileID: 2200469569518783308, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+  gameOverlay: {fileID: 0}
+  gameOver: {fileID: 5146943038518255846, guid: ff97bc12e3a2db34fa3f8be998fcf2fb, type: 3}

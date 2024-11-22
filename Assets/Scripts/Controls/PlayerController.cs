@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private HealthBar mHealthBar;
     public HUD gameOverlay;
     public int Health = 100;
+    public EndOfLevelManager endOfLevelManager;
 
     // Start is called before the first frame update
 
@@ -39,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
         if (IsDead)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+            endOfLevelManager.GameOver();
             //StartCoroutine(PlaydeathSound());
 
         }

@@ -24,7 +24,6 @@ public class EnemyRaycast : MonoBehaviour
 
         if (Physics.Raycast(theRay, out RaycastHit hit, range))
         {
-            Debug.Log("Hit Something " + hit.collider.name);
             if (hit.collider.tag == "Player")
             {
                 enemyScript.isPlayerInRange = true;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.AI;
 
 public class EnemyScript : MonoBehaviour
@@ -28,6 +29,7 @@ public class EnemyScript : MonoBehaviour
         if (DestinationReached())
         {
             SetNextWaypoint();
+            Debug.Log("ello");
 
         }
         else if (isPlayerInRange == true)
@@ -40,6 +42,7 @@ public class EnemyScript : MonoBehaviour
 
     private void ChasePlayer()
     {
+        SceneManager.LoadScene("EndMenu");
         transform.position = Vector3.MoveTowards(transform.position, targetObject.position, 10 * Time.deltaTime);
     }
 
@@ -64,10 +67,14 @@ public class EnemyScript : MonoBehaviour
             if (index == waypointPos.Count - 1) 
             {
                 forward = false;
-                if (isPlayerInRange == true)
+                /*if (isPlayerInRange == true)
                 {
                     ChasePlayer();
-                }
+                }*/
+            }
+            else if (isPlayerInRange == true)
+            {
+                ChasePlayer();
             }
 
             // Move Character
@@ -89,14 +96,18 @@ public class EnemyScript : MonoBehaviour
             if (index == 0)
             {
                 forward = true;
-                if (isPlayerInRange == true)
+                /*if (isPlayerInRange == true)
                 {
                     ChasePlayer();
-                }
+                }*/
+            }
+            else if (isPlayerInRange == true)
+            {
+                ChasePlayer();
             }
 
-            // Move Character
-            agent.SetDestination(waypointPos[index].position);
+                // Move Character
+                agent.SetDestination(waypointPos[index].position);
         }
 
     }

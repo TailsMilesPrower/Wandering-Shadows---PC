@@ -6,21 +6,28 @@ using UnityEngine.SceneManagement;
 public class EnemyRaycast : MonoBehaviour
 {
     public float range = 5f;
-    public bool isPlayerInRange;
+    public LayerMask targetMask;
+    private EnemyScript enemyScript;
+    public GameObject player;
+
+    private void Awake()
+    {
+        enemyScript = transform.parent.GetComponent<EnemyScript>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = Vector3.forward;
-        Ray theRay = new Ray(transform.position, transform.TransformDirection(direction * range));
-        Debug.DrawRay(transform.position, transform.TransformDirection(direction * range));
+        Vector3 direction = transform.forward;
+        Ray theRay = new Ray(transform.position, direction);
+        Debug.DrawLine(transform.position, transform.position + direction * range);
 
         if (Physics.Raycast(theRay, out RaycastHit hit, range))
         {
+            Debug.Log("Hit Something " + hit.collider.name);
             if (hit.collider.tag == "Player")
             {
-                isPlayerInRange = true;
-                SceneManager.LoadScene("OfficialPrototype");
+                enemyScript.isPlayerInRange = true;
                 print("I see the Player, EVERYONE ATTACK!!!");
             }
             else if (hit.collider.tag == "Building")

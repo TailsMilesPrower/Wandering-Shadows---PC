@@ -231,6 +231,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2741347817823998763, guid: 3ecc753e159603b49a37d32f511c58fc, type: 3}
+--- !u!1 &290670386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1361098449858651499, guid: f8b76540710319049bf3095be54a539f, type: 3}
+  m_PrefabInstance: {fileID: 1144688585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &304292409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5752915553953570256, guid: f8b76540710319049bf3095be54a539f, type: 3}
@@ -620,6 +625,18 @@ PrefabInstance:
       propertyPath: objectToRotateSun
       value: 
       objectReference: {fileID: 388214707}
+    - target: {fileID: 4427334600414219704, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: m_AutoRepath
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427334600414219704, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: m_WalkableMask
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427334600414219704, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: m_AutoTraverseOffMeshLink
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5752915553953570256, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.73487
@@ -672,6 +689,10 @@ PrefabInstance:
       propertyPath: dirLight
       value: 
       objectReference: {fileID: 388214708}
+    - target: {fileID: 8160085400553935140, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: burningAnimation
+      value: 
+      objectReference: {fileID: 290670386}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

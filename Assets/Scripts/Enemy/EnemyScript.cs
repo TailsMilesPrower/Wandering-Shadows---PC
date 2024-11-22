@@ -15,7 +15,7 @@ public class EnemyScript : MonoBehaviour
     public Transform targetObject;
     [SerializeField] EnemyRaycast enemyRaycast;
 
-    // Tor Arne & Jonas helped me with this code
+    // Tor Arne, Kri & Jonas helped me with this code
 
     void Start()
     {
@@ -30,8 +30,7 @@ public class EnemyScript : MonoBehaviour
             SetNextWaypoint();
 
         }
-
-        else if (isPlayerInRange == true || enemyRaycast.isPlayerInRange || enemyRaycast.CompareTag("Player"))
+        else if (isPlayerInRange == true)
         {
             Debug.Log("I am chasing");
             ChasePlayer();
@@ -41,7 +40,7 @@ public class EnemyScript : MonoBehaviour
 
     private void ChasePlayer()
     {
-        transform.position = Vector3.MoveTowards(this.transform.position, targetObject.position, 10 * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, targetObject.position, 10 * Time.deltaTime);
     }
 
     private bool DestinationReached()
@@ -65,6 +64,10 @@ public class EnemyScript : MonoBehaviour
             if (index == waypointPos.Count - 1) 
             {
                 forward = false;
+                if (isPlayerInRange == true)
+                {
+                    ChasePlayer();
+                }
             }
 
             // Move Character
@@ -86,6 +89,10 @@ public class EnemyScript : MonoBehaviour
             if (index == 0)
             {
                 forward = true;
+                if (isPlayerInRange == true)
+                {
+                    ChasePlayer();
+                }
             }
 
             // Move Character

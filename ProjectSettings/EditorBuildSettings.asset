@@ -38,5 +38,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PrototypeScenes/6th_Level.unity
     guid: b41799d59f6aa6f41ab75c360c4b7e15
+  - enabled: 1
+    path: Assets/Scenes/PrototypeScenes/TutorialScene.unity
+    guid: c4271f5409ec51a4ca83204ff8066860
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

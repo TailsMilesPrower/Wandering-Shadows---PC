@@ -44,5 +44,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PrototypeScenes/TutorialScene.unity
     guid: c4271f5409ec51a4ca83204ff8066860
+  - enabled: 1
+    path: Assets/Scenes/MenuScenes/FailuareMenu.unity
+    guid: 7ee508eac68a6ca48a8b71d1d70917a0
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

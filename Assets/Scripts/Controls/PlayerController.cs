@@ -7,14 +7,14 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private AudioClip deathSoundClip;
     private HealthBar mHealthBar;
-    public HUD Hud;
+    public HUD gameOverlay;
     public int Health = 100;
 
     // Start is called before the first frame update
 
     void Start()
     {
-        mHealthBar = Hud.transform.Find("HealthBar").GetComponent<HealthBar>();
+        mHealthBar = gameOverlay.transform.Find("HealthBar").GetComponent<HealthBar>();
         mHealthBar.Min = 0;
         mHealthBar.Max = Health;
 

@@ -5141,11 +5141,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2741347817823998763, guid: 3ecc753e159603b49a37d32f511c58fc, type: 3}
---- !u!1 &290670386 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1361098449858651499, guid: f8b76540710319049bf3095be54a539f, type: 3}
-  m_PrefabInstance: {fileID: 1144688585}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &304292409 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5752915553953570256, guid: f8b76540710319049bf3095be54a539f, type: 3}
@@ -15235,18 +15230,6 @@ PrefabInstance:
       propertyPath: objectToRotateSun
       value: 
       objectReference: {fileID: 388214707}
-    - target: {fileID: 4427334600414219704, guid: f8b76540710319049bf3095be54a539f, type: 3}
-      propertyPath: m_AutoRepath
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4427334600414219704, guid: f8b76540710319049bf3095be54a539f, type: 3}
-      propertyPath: m_WalkableMask
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 4427334600414219704, guid: f8b76540710319049bf3095be54a539f, type: 3}
-      propertyPath: m_AutoTraverseOffMeshLink
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5752915553953570256, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.73487
@@ -15290,7 +15273,11 @@ PrefabInstance:
     - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: Hud
       value: 
-      objectReference: {fileID: 739685772}
+      objectReference: {fileID: 2045067152}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: gameOverlay
+      value: 
+      objectReference: {fileID: 2045067152}
     - target: {fileID: 7503625447058638574, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_Name
       value: VampirePrefab
@@ -15299,10 +15286,6 @@ PrefabInstance:
       propertyPath: dirLight
       value: 
       objectReference: {fileID: 388214708}
-    - target: {fileID: 8160085400553935140, guid: f8b76540710319049bf3095be54a539f, type: 3}
-      propertyPath: burningAnimation
-      value: 
-      objectReference: {fileID: 290670386}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15694,6 +15677,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce7a16772a98f2048b16ad6b0b05134b, type: 3}
+--- !u!114 &2045067152 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7573308100182321245, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+  m_PrefabInstance: {fileID: 2085034894}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c7882bc49d9964e919a836f5d14f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2085034894
 PrefabInstance:
   m_ObjectHideFlags: 0

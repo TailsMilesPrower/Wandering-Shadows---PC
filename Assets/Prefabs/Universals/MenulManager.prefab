@@ -48,5 +48,5 @@ MonoBehaviour:
   pauseMenu: {fileID: 7109605265962991767, guid: d4c4a9c1fd0df794a830090c95999dcb, type: 3}
   ChooseMenu: {fileID: 0}
   HowToPc: {fileID: 0}
-  gameOverlay: {fileID: 0}
+  gameOverlay: {fileID: 4605589894366294908, guid: f458f7f6e5c445049922bf0bcba08815, type: 3}
   gameOver: {fileID: 5146943038518255846, guid: ff97bc12e3a2db34fa3f8be998fcf2fb, type: 3}

@@ -16,6 +16,7 @@ public class FinishLine : MonoBehaviour
             SoundEffectManager.instance.PlaySoundFXClip(finishClip, transform, 1f);
             //Debug.Log("Finish!");
             // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+           
 
             endOfLevelManager.Finish();
             burningSoundSource = GetComponent<AudioSource>();

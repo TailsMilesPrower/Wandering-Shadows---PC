@@ -6,11 +6,12 @@ using UnityEngine;
 public class EnemyDetection : MonoBehaviour
 {
     public GameObject target;
+    public EndOfLevelManager endOfLevelManager;
     private void OnTriggerEnter(Collider coll)
     {
         if (coll.GetComponent<Collider>().tag == "Player")
         {
-            SceneManager.LoadScene("FailuareMenu");
+            endOfLevelManager.GameOver();
         }
     }
 }

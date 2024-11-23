@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class PlayerController : MonoBehaviour
     public int Health = 100;
     public EndOfLevelManager endOfLevelManager;
 
-    public DeathAnims[] deathAnim;
+    public GameObject[] deathAnim;
+    //public List<Transform> deathAnims = new List<Transform>();
     private int animIndex;
 
     public MeshRenderer rendVamp;
@@ -35,7 +37,9 @@ public class PlayerController : MonoBehaviour
  
         rendVamp.enabled = true;
         rendHitBox.enabled = true;
-        animIndex = random.Range(0,DeathAnims.Length-1);
+      
+        animIndex = Random.Range(0,deathAnim.Length);
+        Debug.Log(animIndex);
     }
 
     public bool IsDead
@@ -79,7 +83,7 @@ public class PlayerController : MonoBehaviour
         rendTargetDest.enabled = false;
 
 
-        deathAnimation = Instantiate(DeathAnims[animIndex], transform.position, Quaternion.identity);
+        deathAnimation = Instantiate(deathAnim[animIndex], transform.position, Quaternion.identity);
         Debug.Log("Playing...");
         yield return new WaitForSeconds(3f);
         

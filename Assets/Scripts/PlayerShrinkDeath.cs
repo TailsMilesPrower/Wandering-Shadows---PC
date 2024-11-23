@@ -6,12 +6,9 @@ public class PlayerShrinkDeath : MonoBehaviour
     ParticleSystem shrinkingParticles;
 
     // Is the player dying? If so - rotate, shrink and play particle effect
-    [SerializeField]
-    bool isDying = false;
-    [SerializeField]
-    bool isDead = false;
-    [SerializeField]
-    bool isRotating = false;
+
+
+
     [SerializeField]
     Vector3 rotationAxis = Vector3.up;
 
@@ -41,21 +38,11 @@ public class PlayerShrinkDeath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isDying && !isDead)
-        {
-            if (Input.GetKeyDown(KeyCode.X))
-            {
-                isDying = true;
-            }
-        }
+       
 
-        if (isDying)
-        {
-            if (!shrinkingParticles.isPlaying)
-            {
+       
                 shrinkingParticles.Play();
-            }
-
+          
             if (timeElapsed < timeLimit)
             {
                 Vector3 currentScale = Vector3.Lerp(startScale, endScale, timeElapsed / timeLimit);
@@ -63,16 +50,14 @@ public class PlayerShrinkDeath : MonoBehaviour
             } else
             {
                 shrinkingParticles.Stop();
-                isDying = false;
-                isDead = true;
+
                 gameObject.GetComponentInChildren<Renderer>().enabled = false;
             }
 
-            if (isRotating)
-            {
+          
                 body.Rotate(rotationAxis, rotationSpeed * Time.deltaTime);
-            }
+            
             timeElapsed += Time.deltaTime;
         }
     }
-}
+

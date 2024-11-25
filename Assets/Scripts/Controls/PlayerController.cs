@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
         rendTargetDest.enabled = false;
 
 
-        deathAnimation = Instantiate(deathAnim[animIndex], transform.position, Quaternion.identity);
+        deathAnimation = Instantiate(deathAnim[animIndex], transform.position + new Vector3(0,0.5f,0), Quaternion.identity);
         Debug.Log("Playing...");
         yield return new WaitForSeconds(3f);
         

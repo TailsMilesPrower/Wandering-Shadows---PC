@@ -4989,7 +4989,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -5009,9 +5009,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shrinkingParticles: {fileID: 7527466063404654987}
-  isDying: 0
-  isDead: 0
-  isRotating: 0
   rotationAxis: {x: 0, y: 1, z: 0}
   timeElapsed: 0
   timeLimit: 4

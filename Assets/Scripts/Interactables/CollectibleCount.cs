@@ -37,12 +37,14 @@ public class CollectibleCount : MonoBehaviour
 
     void OnCollectibleCollected()
     {
+        Debug.Log("collected");
         count++;
         UpdateCount();
     }
 
     void UpdateCount()
     {
+        Debug.Log("updated szars");
         //text.text = "Fruits collected " + $"{count} / {Collectible.total}";
         if(count == 1)
         {

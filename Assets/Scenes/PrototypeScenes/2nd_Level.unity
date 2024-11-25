@@ -5675,6 +5675,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!23 &637919447 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4259734192642285643, guid: f8b76540710319049bf3095be54a539f, type: 3}
+  m_PrefabInstance: {fileID: 666161525}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &666161525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5744,13 +5749,41 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: rendVamp
+      value: 
+      objectReference: {fileID: 2037550282}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: deathClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 08be019fa0418804e89ff8a2e8bc793c, type: 3}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: rendHitBox
+      value: 
+      objectReference: {fileID: 637919447}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: gameOverlay
       value: 
       objectReference: {fileID: 122535762}
     - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: rendTargetDest
+      value: 
+      objectReference: {fileID: 2143589067}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: endOfLevelManager
       value: 
       objectReference: {fileID: 1410738645}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: deathAnim.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: 'deathAnim.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4632538727264895360, guid: b18b8ec31850fc743a61588f4fa4065b, type: 3}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: 'deathAnim.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5466566264286716684, guid: 4d187429de7193d41b2cb73d36db0c37, type: 3}
     - target: {fileID: 7503625447058638574, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_Name
       value: VampirePrefab
@@ -26302,6 +26335,11 @@ Transform:
 --- !u!1 &2037550278 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7503625447058638574, guid: f8b76540710319049bf3095be54a539f, type: 3}
+  m_PrefabInstance: {fileID: 666161525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2037550282 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6817280832862636178, guid: f8b76540710319049bf3095be54a539f, type: 3}
   m_PrefabInstance: {fileID: 666161525}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2042135272

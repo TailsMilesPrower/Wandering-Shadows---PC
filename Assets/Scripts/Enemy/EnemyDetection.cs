@@ -11,7 +11,8 @@ public class EnemyDetection : MonoBehaviour
     {
         if (coll.GetComponent<Collider>().tag == "Player")
         {
-            endOfLevelManager.GameOver();
+            GameObject.FindAnyObjectByType<PlayerController>().Health = 0;
+
         }
     }
 }

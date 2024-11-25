@@ -5229,6 +5229,14 @@ PrefabInstance:
       propertyPath: 'waypointPosition.Array.data[3]'
       value: 
       objectReference: {fileID: 1463227964}
+    - target: {fileID: 4570612254092498959, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
+      propertyPath: m_BaseOffset
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4570612254092498959, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
+      propertyPath: m_AgentTypeID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4970814235213741920, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.6
@@ -5273,6 +5281,38 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1507202809}
+    - target: {fileID: 6506636076133617728, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
+      propertyPath: rendVamp
+      value: 
+      objectReference: {fileID: 1507202810}
+    - target: {fileID: 6506636076133617728, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
+      propertyPath: deathClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 08be019fa0418804e89ff8a2e8bc793c, type: 3}
+    - target: {fileID: 6506636076133617728, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
+      propertyPath: rendHitBox
+      value: 
+      objectReference: {fileID: 1507202811}
+    - target: {fileID: 6506636076133617728, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
+      propertyPath: rendTargetDest
+      value: 
+      objectReference: {fileID: 3043112512319009596}
+    - target: {fileID: 6506636076133617728, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
+      propertyPath: endOfLevelManager
+      value: 
+      objectReference: {fileID: 369099986}
+    - target: {fileID: 6506636076133617728, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
+      propertyPath: deathAnim.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506636076133617728, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
+      propertyPath: 'deathAnim.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4632538727264895360, guid: b18b8ec31850fc743a61588f4fa4065b, type: 3}
+    - target: {fileID: 6506636076133617728, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
+      propertyPath: 'deathAnim.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5466566264286716684, guid: 4d187429de7193d41b2cb73d36db0c37, type: 3}
     - target: {fileID: 8421339817096837025, guid: dd2c38d7d3761a0408167dd2f2246273, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -31128,13 +31168,17 @@ PrefabInstance:
       propertyPath: objectToRotateSun
       value: 
       objectReference: {fileID: 1871313808}
+    - target: {fileID: 4427334600414219704, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: m_BaseOffset
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5752915553953570256, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.7
       objectReference: {fileID: 0}
     - target: {fileID: 5752915553953570256, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.73
+      value: -5.64
       objectReference: {fileID: 0}
     - target: {fileID: 5752915553953570256, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -31173,13 +31217,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: rendVamp
+      value: 
+      objectReference: {fileID: 1507202810}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: deathClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 08be019fa0418804e89ff8a2e8bc793c, type: 3}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: rendHitBox
+      value: 
+      objectReference: {fileID: 1507202811}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: gameOverlay
       value: 
       objectReference: {fileID: 371032862}
     - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: rendTargetDest
+      value: 
+      objectReference: {fileID: 3043112512319009596}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: endOfLevelManager
       value: 
       objectReference: {fileID: 369099986}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: deathAnim.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: 'deathAnim.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4632538727264895360, guid: b18b8ec31850fc743a61588f4fa4065b, type: 3}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: 'deathAnim.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5466566264286716684, guid: 4d187429de7193d41b2cb73d36db0c37, type: 3}
     - target: {fileID: 7503625447058638574, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_Name
       value: VampirePrefab
@@ -31196,6 +31268,16 @@ PrefabInstance:
 --- !u!1 &1507202809 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7503625447058638574, guid: f8b76540710319049bf3095be54a539f, type: 3}
+  m_PrefabInstance: {fileID: 1507202808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1507202810 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6817280832862636178, guid: f8b76540710319049bf3095be54a539f, type: 3}
+  m_PrefabInstance: {fileID: 1507202808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1507202811 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4259734192642285643, guid: f8b76540710319049bf3095be54a539f, type: 3}
   m_PrefabInstance: {fileID: 1507202808}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1525061461
@@ -31412,6 +31494,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2092363726628930401, guid: 0cd2a61b4ac38c044a81abb14ddcf8e2, type: 3}
   m_PrefabInstance: {fileID: 1673827575}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1687351705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6452931392209319209, guid: 58073ab7b49668043ae069f28d113109, type: 3}
+  m_PrefabInstance: {fileID: 1984389777535145912}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1687351711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687351705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 40136dae0b09217439dd1fd8a1e7de67, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1 &1700899286
 GameObject:
   m_ObjectHideFlags: 0
@@ -41870,6 +41989,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2146222531427518466, guid: 58073ab7b49668043ae069f28d113109, type: 3}
+      propertyPath: m_AgentTypeID
+      value: -334000983
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146222531427518466, guid: 58073ab7b49668043ae069f28d113109, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: 9a8c488708f7f2744ae67f8d8be8859a, type: 2}
     - target: {fileID: 6086699388283570744, guid: 58073ab7b49668043ae069f28d113109, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.2883358
@@ -41880,7 +42007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6086699388283570744, guid: 58073ab7b49668043ae069f28d113109, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.4436283
+      value: 2.49
       objectReference: {fileID: 0}
     - target: {fileID: 6086699388283570744, guid: 58073ab7b49668043ae069f28d113109, type: 3}
       propertyPath: m_LocalRotation.w
@@ -41917,7 +42044,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6452931392209319209, guid: 58073ab7b49668043ae069f28d113109, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1687351711}
   m_SourcePrefab: {fileID: 100100000, guid: 58073ab7b49668043ae069f28d113109, type: 3}
 --- !u!1001 &3043112512319009595
 PrefabInstance:
@@ -41976,6 +42106,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 814bff5a10db5764997f57ba74835359, type: 3}
+--- !u!23 &3043112512319009596 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6159515907196163327, guid: 814bff5a10db5764997f57ba74835359, type: 3}
+  m_PrefabInstance: {fileID: 3043112512319009595}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7501484025248296868
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -20205,13 +20205,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2045067152}
     - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: rendVamp
+      value: 
+      objectReference: {fileID: 1144688586}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: deathClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 08be019fa0418804e89ff8a2e8bc793c, type: 3}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: rendHitBox
+      value: 
+      objectReference: {fileID: 1257282320}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: gameOverlay
       value: 
       objectReference: {fileID: 2045067152}
     - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: rendTargetDest
+      value: 
+      objectReference: {fileID: 1178818045}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: endOfLevelManager
       value: 
       objectReference: {fileID: 481942846}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: deathAnim.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: 'deathAnim.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4632538727264895360, guid: b18b8ec31850fc743a61588f4fa4065b, type: 3}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: 'deathAnim.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5466566264286716684, guid: 4d187429de7193d41b2cb73d36db0c37, type: 3}
     - target: {fileID: 7503625447058638574, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_Name
       value: VampirePrefab
@@ -20225,6 +20253,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8b76540710319049bf3095be54a539f, type: 3}
+--- !u!23 &1144688586 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6817280832862636178, guid: f8b76540710319049bf3095be54a539f, type: 3}
+  m_PrefabInstance: {fileID: 1144688585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1178818044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20282,6 +20315,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 814bff5a10db5764997f57ba74835359, type: 3}
+--- !u!23 &1178818045 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6159515907196163327, guid: 814bff5a10db5764997f57ba74835359, type: 3}
+  m_PrefabInstance: {fileID: 1178818044}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1257282320 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4259734192642285643, guid: f8b76540710319049bf3095be54a539f, type: 3}
+  m_PrefabInstance: {fileID: 1144688585}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1294927717 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2092363726628930401, guid: 0cd2a61b4ac38c044a81abb14ddcf8e2, type: 3}

@@ -28,7 +28,9 @@ public class Collectible : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
+            Debug.Log("trying collect");
             OnCollected?.Invoke();
+
             Destroy(gameObject);
         }
     }

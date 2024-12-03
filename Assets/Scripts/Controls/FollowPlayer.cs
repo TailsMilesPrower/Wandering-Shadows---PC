@@ -13,7 +13,7 @@ public class FollowPlayer : MonoBehaviour
             // Calculate the direction to the player
             Vector3 direction = (player.position - transform.position).normalized;
             // Move towards the player
-            transform.position = player.position;
+            transform.position = new Vector3(player.position.x, 0, player.position.z);
         }
     }
 }

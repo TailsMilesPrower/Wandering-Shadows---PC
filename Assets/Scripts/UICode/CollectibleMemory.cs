@@ -1,15 +1,12 @@
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.SceneManagement;
 
 public class CollectibleMemory : MonoBehaviour
 {
-    public Scene Level1;
-    public Scene Level2;
-    public Scene Level3;
-    public Scene Level4;
-    public Scene Level5;
-    public Scene Level6;
-
+    [SerializeField]
+    string sceneToLoadPath;
+    
     [SerializeField]
     private CollectibleCount total, count;
     void Update()
@@ -17,4 +14,20 @@ public class CollectibleMemory : MonoBehaviour
         SceneManager.GetActiveScene();
         total = count;
     }
+#if UNITY_EDITOR
+    public SceneAsset SceneToLoad
+    {
+        get
+        {
+            return AssetDatabase.LoadAssetAtPath<SceneAsset>(sceneToLoadPath);
+        }
+        set
+        {
+            sceneToLoadPath = AssetDatabase.GetAssetPath(value);
+        }
+    }
+
+#endif
+
+
 }

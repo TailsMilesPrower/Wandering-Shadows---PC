@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 337415057}
   - component: {fileID: 337415058}
   m_Layer: 0
-  m_Name: 6
+  m_Name: LVL 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ad49f94c0d5246bea84d61b8bee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 6th_Level
+  sceneToLoadPath: Assets/Scenes/PrototypeScenes/6th_Level.unity
 --- !u!1 &457847671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 843317003}
   - component: {fileID: 843317004}
   m_Layer: 0
-  m_Name: 5
+  m_Name: LVL 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ad49f94c0d5246bea84d61b8bee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 5th_Level
+  sceneToLoadPath: Assets/Scenes/PrototypeScenes/5th_Level.unity
 --- !u!1 &856427753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,7 +1551,7 @@ GameObject:
   - component: {fileID: 1095991196}
   - component: {fileID: 1095991195}
   m_Layer: 0
-  m_Name: Script3stLevel
+  m_Name: LVL 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1569,7 +1569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ad49f94c0d5246bea84d61b8bee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 3rd_Level
+  sceneToLoadPath: Assets/Scenes/PrototypeScenes/3rd_Level.unity
 --- !u!4 &1095991196
 Transform:
   m_ObjectHideFlags: 0
@@ -2061,7 +2061,7 @@ GameObject:
   - component: {fileID: 1421019482}
   - component: {fileID: 1421019483}
   m_Layer: 0
-  m_Name: Script4stLevel
+  m_Name: LVL 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2094,7 +2094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ad49f94c0d5246bea84d61b8bee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 4th_Level
+  sceneToLoadPath: Assets/Scenes/PrototypeScenes/4th_Level.unity
 --- !u!1 &1489309392
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,7 +2106,7 @@ GameObject:
   - component: {fileID: 1489309394}
   - component: {fileID: 1489309393}
   m_Layer: 0
-  m_Name: Script1stLevel
+  m_Name: LVL 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2124,7 +2124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ad49f94c0d5246bea84d61b8bee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 1st_Level
+  sceneToLoadPath: Assets/Scenes/PrototypeScenes/1st_Level.unity
 --- !u!4 &1489309394
 Transform:
   m_ObjectHideFlags: 0
@@ -2389,7 +2389,7 @@ GameObject:
   - component: {fileID: 1968574942}
   - component: {fileID: 1968574941}
   m_Layer: 0
-  m_Name: Script2stLevel
+  m_Name: LVL 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2407,7 +2407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ad49f94c0d5246bea84d61b8bee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 2nd_Level
+  sceneToLoadPath: Assets/Scenes/PrototypeScenes/2nd_Level.unity
 --- !u!4 &1968574942
 Transform:
   m_ObjectHideFlags: 0
@@ -2596,6 +2596,53 @@ Transform:
   - {fileID: 337415057}
   m_Father: {fileID: 933537271}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2129823870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2129823872}
+  - component: {fileID: 2129823871}
+  m_Layer: 0
+  m_Name: Collectable Memory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2129823871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129823870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5253c88608caaea4bb0f48efeacf9490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoadPath: 
+  total: {fileID: 0}
+  count: {fileID: 0}
+--- !u!4 &2129823872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129823870}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 540, y: 1831.1696, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2131144473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2738,3 +2785,4 @@ SceneRoots:
   - {fileID: 1105924823}
   - {fileID: 933537271}
   - {fileID: 235966070}
+  - {fileID: 2129823872}

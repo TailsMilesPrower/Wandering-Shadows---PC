@@ -53,25 +53,25 @@ public class CollectibleCount : MonoBehaviour
         //text.text = "Fruits collected " + $"{count} / {Collectible.total}";
         if (count == 0)
         {
-            count = total;
+            total = count;
         }
         if(count == 1)
         {
             star1.SetActive(true);
             endStar1.SetActive(true);
-            count = total;
+            total = count;
         }
         if (count == 2)
         { 
             star2.SetActive(true);
             endStar2.SetActive(true);
-            count = total;
+            total = count;
         }
         if (count == 3)
         { 
             star3.SetActive(true);
             endStar3.SetActive(true);
-            count = total;
+            total = count;
         }
 
 

@@ -10349,6 +10349,17 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &271786186 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5763065109998723994, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+  m_PrefabInstance: {fileID: 1244198916}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &294537594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15625,6 +15636,17 @@ Transform:
   - {fileID: 91429176}
   m_Father: {fileID: 346310198}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &530663754 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6901861162091627274, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+  m_PrefabInstance: {fileID: 1244198916}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &562399529
 GameObject:
   m_ObjectHideFlags: 0
@@ -27098,6 +27120,17 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1073771880 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8758238770894324631, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+  m_PrefabInstance: {fileID: 1244198916}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1122461005
 GameObject:
   m_ObjectHideFlags: 0
@@ -27661,6 +27694,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4143374786886162762, guid: 8dbf7421fc0b7d24da6e9595b5bea5ac, type: 3}
   m_PrefabInstance: {fileID: 400807198}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1334261084 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3395090001922958753, guid: f22436e78f1a06a4c8a502204c657020, type: 3}
+  m_PrefabInstance: {fileID: 172176629}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1372046138 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 500968103782929182, guid: 9ea26cad73240ab4fb2c1195fca7fb0d, type: 3}
@@ -28144,6 +28182,17 @@ Transform:
   - {fileID: 204408300}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -88.811, z: 0}
+--- !u!114 &1658748006 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7632606990657647419, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+  m_PrefabInstance: {fileID: 1244198916}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1672405335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33408,6 +33457,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8465568468128191410, guid: 854a29c2dbdd5f042bf6b97835b9ed55, type: 3}
+      propertyPath: questPointers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8465568468128191410, guid: 854a29c2dbdd5f042bf6b97835b9ed55, type: 3}
+      propertyPath: questPointers.Array.data[0].img
+      value: 
+      objectReference: {fileID: 271786186}
+    - target: {fileID: 8465568468128191410, guid: 854a29c2dbdd5f042bf6b97835b9ed55, type: 3}
+      propertyPath: questPointers.Array.data[1].img
+      value: 
+      objectReference: {fileID: 530663754}
+    - target: {fileID: 8465568468128191410, guid: 854a29c2dbdd5f042bf6b97835b9ed55, type: 3}
+      propertyPath: questPointers.Array.data[2].img
+      value: 
+      objectReference: {fileID: 1658748006}
+    - target: {fileID: 8465568468128191410, guid: 854a29c2dbdd5f042bf6b97835b9ed55, type: 3}
+      propertyPath: questPointers.Array.data[3].img
+      value: 
+      objectReference: {fileID: 1073771880}
+    - target: {fileID: 8465568468128191410, guid: 854a29c2dbdd5f042bf6b97835b9ed55, type: 3}
+      propertyPath: questPointers.Array.data[0].target
+      value: 
+      objectReference: {fileID: 11550252}
+    - target: {fileID: 8465568468128191410, guid: 854a29c2dbdd5f042bf6b97835b9ed55, type: 3}
+      propertyPath: questPointers.Array.data[1].target
+      value: 
+      objectReference: {fileID: 178757831}
+    - target: {fileID: 8465568468128191410, guid: 854a29c2dbdd5f042bf6b97835b9ed55, type: 3}
+      propertyPath: questPointers.Array.data[2].target
+      value: 
+      objectReference: {fileID: 1679935396}
+    - target: {fileID: 8465568468128191410, guid: 854a29c2dbdd5f042bf6b97835b9ed55, type: 3}
+      propertyPath: questPointers.Array.data[3].target
+      value: 
+      objectReference: {fileID: 1334261084}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

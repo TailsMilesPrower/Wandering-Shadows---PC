@@ -5,6 +5,9 @@ using TMPro;
 
 public class CollectibleCount : MonoBehaviour
 {
+
+    //private static Collectible collectibleScript;
+
     public GameObject star1;
     public GameObject star2;
     public GameObject star3;
@@ -12,12 +15,13 @@ public class CollectibleCount : MonoBehaviour
     public GameObject endStar1;
     public GameObject endStar2;
     public GameObject endStar3;
-    TMPro.TMP_Text text;
-    int count;
-
+    //TMPro.TMP_Text text;
+    int count = 0;
+    public static int total;
     void Awake()
     {
-        text = GetComponent<TMPro.TMP_Text>();
+        //collectibleScript = new Collectible();
+        //text = GetComponent<TMPro.TMP_Text>();
     }
 
     private void Start()
@@ -44,8 +48,17 @@ public class CollectibleCount : MonoBehaviour
 
     void UpdateCount()
     {
-        Debug.Log("updated szars");
+        Debug.Log("updated stars");
         //text.text = "Fruits collected " + $"{count} / {Collectible.total}";
+        if(count == 0)
+        {
+            star1.SetActive(false);
+            star2.SetActive(false);
+            star3.SetActive(false);
+            //endStar1.SetActive(false); 
+            //endStar2.SetActive(false);
+            //endStar3.SetActive(false);
+        }
         if(count == 1)
         {
             star1.SetActive(true);

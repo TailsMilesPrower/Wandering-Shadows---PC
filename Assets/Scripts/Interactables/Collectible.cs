@@ -42,7 +42,7 @@ public class Collectible : MonoBehaviour
     }
     void Update()
     {
-        transform.localRotation = Quaternion.Euler(30f, Time.time * 100f, 0f);
+        //transform.localRotation = Quaternion.Euler(30f, Time.time * 100f, 0f);
     }
 
     void OnTriggerEnter(Collider other)
@@ -50,7 +50,7 @@ public class Collectible : MonoBehaviour
         // Play SoundFX
         SoundEffectManager.instance.PlaySoundFXClip(collectSoundClip, transform, 1f);
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Fruit"))
         {
             
             // Old method

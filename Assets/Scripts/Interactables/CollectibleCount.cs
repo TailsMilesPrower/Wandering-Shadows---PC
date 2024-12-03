@@ -50,14 +50,9 @@ public class CollectibleCount : MonoBehaviour
     {
         Debug.Log("updated stars");
         //text.text = "Fruits collected " + $"{count} / {Collectible.total}";
-        if(count == 0)
+        if (count == 0)
         {
-            star1.SetActive(false);
-            star2.SetActive(false);
-            star3.SetActive(false);
-            //endStar1.SetActive(false); 
-            //endStar2.SetActive(false);
-            //endStar3.SetActive(false);
+
         }
         if(count == 1)
         {

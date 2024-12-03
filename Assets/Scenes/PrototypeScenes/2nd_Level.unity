@@ -310,6 +310,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 2258441692384088741, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1410738645}
+    - target: {fileID: 2258441692384088741, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 2535067974994414541, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
       propertyPath: m_SizeDelta.x
       value: 224.1096
@@ -426,6 +434,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3886683701372372956, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1410738645}
+    - target: {fileID: 3886683701372372956, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenuButton
+      objectReference: {fileID: 0}
     - target: {fileID: 4488084653061068884, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: 
@@ -474,6 +490,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1410738645}
+    - target: {fileID: 7633267408657918201, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1410738645}
+    - target: {fileID: 7633267408657918201, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EndGame
+      objectReference: {fileID: 0}
     - target: {fileID: 7965378042979811026, guid: 81b1c31284caa29409f2562128a2b1cd, type: 3}
       propertyPath: m_SizeDelta.x
       value: 262.3657

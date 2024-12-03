@@ -4980,10 +4980,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d13402a199be5f408a1c16563f7221b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathSoundClip: {fileID: 8300000, guid: 08be019fa0418804e89ff8a2e8bc793c, type: 3}
+  deathClip: {fileID: 0}
   gameOverlay: {fileID: 0}
   Health: 100
   endOfLevelManager: {fileID: 500968103782929182, guid: 9ea26cad73240ab4fb2c1195fca7fb0d, type: 3}
+  deathAnim: []
+  rendVamp: {fileID: 0}
+  rendHitBox: {fileID: 0}
+  rendTargetDest: {fileID: 0}
+  vampPrefabPointAndClick: {fileID: 7503625447058638574}
 --- !u!82 &1495461157265958692
 AudioSource:
   m_ObjectHideFlags: 0

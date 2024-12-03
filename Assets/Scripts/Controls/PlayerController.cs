@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
   
     private int killSwitch = 1;
 
+    public GameObject vampPrefabPointAndClick;
+
     
 
     // Start is called before the first frame update
@@ -82,6 +84,7 @@ public class PlayerController : MonoBehaviour
         rendHitBox.enabled = false;
         rendTargetDest.enabled = false;
         //GetComponent<FollowPlayer>().enabled = false;
+        vampPrefabPointAndClick.GetComponent<PointAndClickController>().enabled = false;
 
         deathAnimation = Instantiate(deathAnim[animIndex], transform.position + new Vector3(0,0.5f,0), Quaternion.identity);
         Debug.Log("Playing...");

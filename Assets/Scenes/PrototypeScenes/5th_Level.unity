@@ -22043,6 +22043,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: hitBox
+      value: 
+      objectReference: {fileID: 1597555704}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: rendVamp
       value: 
       objectReference: {fileID: 1597555703}
@@ -22078,6 +22082,10 @@ PrefabInstance:
       propertyPath: 'deathAnim.Array.data[1]'
       value: 
       objectReference: {fileID: 5466566264286716684, guid: 4d187429de7193d41b2cb73d36db0c37, type: 3}
+    - target: {fileID: 5764383921166094365, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: vampPrefabPointAndClick
+      value: 
+      objectReference: {fileID: 1597555704}
     - target: {fileID: 7503625447058638574, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: m_Name
       value: VampirePrefab

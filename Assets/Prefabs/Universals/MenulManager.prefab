@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endOfLevelMenu: {fileID: 0}
   pauseMenu: {fileID: 0}
-  ChooseMenu: {fileID: 0}
-  HowToPc: {fileID: 0}
+  chooseMenu: {fileID: 0}
+  howToPc: {fileID: 0}
+  howToMobile: {fileID: 0}
   gameOverlay: {fileID: 0}
   gameOver: {fileID: 0}
-  deathClip: {fileID: 8300000, guid: 08be019fa0418804e89ff8a2e8bc793c, type: 3}

@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class CollectibleCount : MonoBehaviour
 {
-
     //private static Collectible collectibleScript;
-
+    
     public GameObject star1;
     public GameObject star2;
     public GameObject star3;
@@ -16,6 +16,7 @@ public class CollectibleCount : MonoBehaviour
     public GameObject endStar2;
     public GameObject endStar3;
     //TMPro.TMP_Text text;
+    [SerializeField]
     int count = 0;
     public static int total;
     void Awake()
@@ -52,23 +53,28 @@ public class CollectibleCount : MonoBehaviour
         //text.text = "Fruits collected " + $"{count} / {Collectible.total}";
         if (count == 0)
         {
-
+            count = total;
         }
         if(count == 1)
         {
             star1.SetActive(true);
             endStar1.SetActive(true);
+            count = total;
         }
         if (count == 2)
-            { 
+        { 
             star2.SetActive(true);
             endStar2.SetActive(true);
-            }
+            count = total;
+        }
         if (count == 3)
-            { 
+        { 
             star3.SetActive(true);
             endStar3.SetActive(true);
-            }
+            count = total;
+        }
+
+
     }
 
     /*[SerializeField] Collectible OnCollected;

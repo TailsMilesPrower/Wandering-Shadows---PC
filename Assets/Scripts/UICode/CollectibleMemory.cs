@@ -9,15 +9,12 @@ public class CollectibleMemory : MonoBehaviour
     public Scene Level4;
     public Scene Level5;
     public Scene Level6;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    [SerializeField]
+    private CollectibleCount total, count;
     void Update()
     {
-        
+        SceneManager.GetActiveScene();
+        total = count;
     }
 }

@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
         rendVamp.enabled = false;
         rendHitBox.enabled = false;
         rendTargetDest.enabled = false;
-
+        //GetComponent<FollowPlayer>().enabled = false;
 
         deathAnimation = Instantiate(deathAnim[animIndex], transform.position + new Vector3(0,0.5f,0), Quaternion.identity);
         Debug.Log("Playing...");

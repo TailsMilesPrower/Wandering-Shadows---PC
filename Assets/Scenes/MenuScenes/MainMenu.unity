@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ad49f94c0d5246bea84d61b8bee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneToLoadPath: 
 --- !u!1 &198002603
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ad49f94c0d5246bea84d61b8bee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: LevelsMenu
+  sceneToLoadPath: Assets/Scenes/MenuScenes/LevelsMenu.unity
 --- !u!4 &603197982
 Transform:
   m_ObjectHideFlags: 0
@@ -1358,7 +1358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ad49f94c0d5246bea84d61b8bee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneToLoadPath: 
 --- !u!1 &1055948531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,7 +1520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ad49f94c0d5246bea84d61b8bee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: SettingsMenu
+  sceneToLoadPath: 
 --- !u!4 &1106586413
 Transform:
   m_ObjectHideFlags: 0
@@ -2269,7 +2269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ad49f94c0d5246bea84d61b8bee1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneToLoadPath: 
 --- !u!114 &1796077778
 MonoBehaviour:
   m_ObjectHideFlags: 0

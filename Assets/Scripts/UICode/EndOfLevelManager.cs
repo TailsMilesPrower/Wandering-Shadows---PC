@@ -9,8 +9,9 @@ public class EndOfLevelManager : MonoBehaviour
     //Reference to the EndOfLevelPrefab
     public GameObject endOfLevelMenu;
     public GameObject pauseMenu;
-    public GameObject ChooseMenu;
-    public GameObject HowToPc;
+    public GameObject chooseMenu;
+    public GameObject howToPc;
+    public GameObject howToMobile;
     public GameObject gameOverlay;
     public GameObject gameOver;
 
@@ -162,7 +163,7 @@ public class EndOfLevelManager : MonoBehaviour
     public void HowToPlayButton()
     {
         //Activates the pause menu
-        ChooseMenu.SetActive(true);
+        chooseMenu.SetActive(true);
         //Freezes time
         Time.timeScale = 0f;
         //Pauses the game
@@ -172,12 +173,23 @@ public class EndOfLevelManager : MonoBehaviour
     public void PCButton()
     {
         //Activates the pause menu
-        HowToPc.SetActive(true);
+        howToPc.SetActive(true);
         //Freezes time
         Time.timeScale = 0f;
         //Pauses the game
         Paused = true;
     }
+
+    public void MobileButton()
+    {
+        //Activates the pause menu
+        howToMobile.SetActive(true);
+        //Freezes time
+        Time.timeScale = 0f;
+        //Pauses the game
+        Paused = true;
+    }
+
 
     public void GameOver()
     {

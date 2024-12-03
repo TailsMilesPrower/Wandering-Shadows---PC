@@ -28,6 +28,7 @@ public class Collectible : MonoBehaviour
         //gameObject.SetActive(true);
     }
 
+
     // Update is called once per frame
     private void Start()
     {

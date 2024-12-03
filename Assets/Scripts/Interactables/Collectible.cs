@@ -13,6 +13,10 @@ public class Collectible : MonoBehaviour
     private void Awake()
     {
         total = 3;
+        if (gameObject == null)
+        {
+            gameObject.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -31,7 +35,8 @@ public class Collectible : MonoBehaviour
             Debug.Log("trying collect");
             OnCollected?.Invoke();
 
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 

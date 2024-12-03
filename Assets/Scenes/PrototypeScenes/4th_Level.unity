@@ -33378,6 +33378,10 @@ PrefabInstance:
       propertyPath: targetDest
       value: 
       objectReference: {fileID: 1644704782}
+    - target: {fileID: 1495461157265958692, guid: f8b76540710319049bf3095be54a539f, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2064507565222195085, guid: f8b76540710319049bf3095be54a539f, type: 3}
       propertyPath: objectToRotateSun
       value: 

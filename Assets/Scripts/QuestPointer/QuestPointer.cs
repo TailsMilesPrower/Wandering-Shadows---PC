@@ -38,7 +38,7 @@ public class QuestPointer : MonoBehaviour
         Vector2 pos = Camera.main.WorldToScreenPoint(target.position);
 
         pos.x = Mathf.Clamp(pos.x, minX, maxX);
-        pos.y = Mathf.Clamp(pos.y, minY, maxY);
+        pos.y = Mathf.Clamp(pos.y, minY, maxY-200);
 
         //distance from targets screen pos
         float distanceToTarget = Vector2.Distance(pos, (Vector2)Camera.main.WorldToScreenPoint(target.position));

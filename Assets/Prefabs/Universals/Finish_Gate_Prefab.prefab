@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -30.13, y: 2.09, z: 54.02}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 5, y: 5, z: 2.78}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -139,10 +139,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6341e25a5f5cd4a846b5cdab321a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endOfLevelManager: {fileID: 500968103782929182, guid: 9ea26cad73240ab4fb2c1195fca7fb0d, type: 3}
+  endOfLevelManager: {fileID: 0}
   finishClip: {fileID: 8300000, guid: 99fa06ddc4b766e4c98139683ee4783a, type: 3}
-  hitBox: {fileID: 7503625447058638574, guid: f8b76540710319049bf3095be54a539f, type: 3}
-  pointers: {fileID: 979197119604596895, guid: e63cee8ca31faa34199ee5b30fdbb49d, type: 3}
+  hitBox: {fileID: 0}
+  pointers: {fileID: 0}
 --- !u!82 &2130098644894752476
 AudioSource:
   m_ObjectHideFlags: 0

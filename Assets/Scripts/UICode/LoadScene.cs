@@ -28,7 +28,7 @@ public class LoadScene : MonoBehaviour
     {
         Application.Quit();
     }
-
+#if UNITY_EDITOR
     public SceneAsset SceneToLoad
     {
         get
@@ -40,4 +40,5 @@ public class LoadScene : MonoBehaviour
             sceneToLoadPath = AssetDatabase.GetAssetPath(value);
         }
     }
+#endif
 }

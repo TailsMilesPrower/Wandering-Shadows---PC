@@ -26,7 +26,7 @@ public class SunMonitor : MonoBehaviour
     //[SerializeField] private AudioClip burningSoundClip;
 
     AudioSource burningSoundSource;
-    public bool sFX_Play;
+    //public bool sFX_Play;
 
 
 
@@ -44,7 +44,7 @@ public class SunMonitor : MonoBehaviour
         isBurning = burningAnimation;
         playerRenderer = GetComponent<Renderer>();
         burningSoundSource = GetComponent<AudioSource>();
-        sFX_Play = true;
+        //sFX_Play = true;
         //burningSoundSource.Stop();
     }
 
@@ -53,6 +53,7 @@ public class SunMonitor : MonoBehaviour
     {
         oppositeDirection = -1f * dirLight.transform.forward;
         // Debug.Log(oppositeDirection.ToString());
+        
 
         if (Physics.Raycast(transform.position+ Vector3.up * sunRraycastHightFactor, oppositeDirection, 100f, mask)) {
            // Debug.DrawRay(transform.position, oppositeDirection * hit.distance, Color.green);
@@ -76,13 +77,19 @@ public class SunMonitor : MonoBehaviour
             Debug.DrawRay(transform.position, oppositeDirection * 50f, Color.red);
             playerRenderer.material.color= Color.red;
 
-            //sFX_Play = true;
-
-
-            //Dmg from sun
+            /*if (Color.red != playerRenderer.material.color)
             {
+                burningSoundSource.Play();
+            }*/
+
+                //sFX_Play = true;
+
+
+                //Dmg from sun
+                {
                 isBurning = true;
                 _isCausingDamage = true;
+                
                 PlayerController player = gameObject.GetComponent<PlayerController>();
                 //SoundEffectManager.instance.PlaySoundFXClip(burningSoundClip, transform, 1f);
 

@@ -22619,6 +22619,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1512124510}
     - target: {fileID: 500968103782929182, guid: 9ea26cad73240ab4fb2c1195fca7fb0d, type: 3}
+      propertyPath: pointers
+      value: 
+      objectReference: {fileID: 1308312755}
+    - target: {fileID: 500968103782929182, guid: 9ea26cad73240ab4fb2c1195fca7fb0d, type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 928208325}

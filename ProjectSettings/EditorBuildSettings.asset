@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PrototypeScenes/6th_Level.unity
     guid: b41799d59f6aa6f41ab75c360c4b7e15
   - enabled: 1
+    path: Assets/Scenes/MenuScenes/GameOverScene.unity
+    guid: 1910cdc8370a6b84fbafb965c0f4575b
+  - enabled: 1
     path: Assets/Scenes/MenuScenes/LevelsMenu.unity
     guid: c66d31a693d2ac0429c098f21d260692
   - enabled: 1

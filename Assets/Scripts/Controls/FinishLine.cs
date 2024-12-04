@@ -9,7 +9,8 @@ public class FinishLine : MonoBehaviour
     [SerializeField] private AudioClip finishClip;
 
     AudioSource burningSoundSource;
-    
+    public GameObject hitBox;
+
     public void OnTriggerEnter(Collider collision)
     {
         if(collision.tag == "Player")
@@ -18,10 +19,10 @@ public class FinishLine : MonoBehaviour
             //Debug.Log("Finish!");
             // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             endOfLevelManager.Finish();
+            hitBox.SetActive(false);
 
-            
             //burningSoundSource = GetComponent<AudioSource>();
-            Destroy(burningSoundSource);
+
         }
     }
 

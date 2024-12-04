@@ -14,8 +14,9 @@ public class EndOfLevelManager : MonoBehaviour
     public GameObject howToMobile;
     public GameObject gameOverlay;
     public GameObject gameOver;
+    //public GameObject hitBox;
 
-    
+
 
 
     //public GameObject inGameDisplay;
@@ -72,6 +73,8 @@ public class EndOfLevelManager : MonoBehaviour
     {
         //Activates the pause menu
         endOfLevelMenu.SetActive(true);
+
+        //hitBox.SetActive(false);
 
         //Deactivates the HUD
         gameOverlay.SetActive(false);

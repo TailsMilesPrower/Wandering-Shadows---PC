@@ -16,15 +16,6 @@ public class FruitRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localRotation = Quaternion.Euler(30f, Time.time * 100f, 0f);
-    }
-
-    void OnTriggerEnter(Collider other)
-    { 
-        if (other.CompareTag("Player"))
-        {
-
-            Destroy(gameObject);
-        }
+        //transform.localRotation = Quaternion.Euler(30f, Time.time * 100f, 0f);
     }
 }

@@ -159,7 +159,16 @@ public class EndOfLevelManager : MonoBehaviour
         //Loads the main menu
         SceneManager.LoadScene("SettingsMenu");
     }
-
+ 
+    public void LevelsMenu()
+    {
+        //Resumes the time
+        Time.timeScale = 1f;
+        //Unpauses the game
+        Paused = false;
+        //Loads the main menu
+        SceneManager.LoadScene("LevelsMenu");
+    }
     public void HowToPlayButton()
     {
         //Activates the pause menu

@@ -14,6 +14,7 @@ public class EndOfLevelManager : MonoBehaviour
     public GameObject howToMobile;
     public GameObject gameOverlay;
     public GameObject gameOver;
+    public GameObject pointers;
     //public GameObject hitBox;
 
 
@@ -210,6 +211,8 @@ public class EndOfLevelManager : MonoBehaviour
         gameOver.SetActive(true);
         //Deactivates the HUD
         gameOverlay.SetActive(false);
+        //Deactivates the Pointers
+        pointers.SetActive(false);
         //Freezes time
         Time.timeScale = 0f;
         //Pauses the game

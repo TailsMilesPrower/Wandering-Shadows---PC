@@ -10,6 +10,7 @@ public class FinishLine : MonoBehaviour
 
     AudioSource burningSoundSource;
     public GameObject hitBox;
+    public GameObject pointers;
 
     public void OnTriggerEnter(Collider collision)
     {
@@ -20,7 +21,7 @@ public class FinishLine : MonoBehaviour
             // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             endOfLevelManager.Finish();
             hitBox.SetActive(false);
-
+            pointers.SetActive(false);
             //burningSoundSource = GetComponent<AudioSource>();
 
         }

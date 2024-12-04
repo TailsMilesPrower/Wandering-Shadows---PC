@@ -4967,7 +4967,6 @@ MonoBehaviour:
   DamageAmount: 1
   Repeating: 1
   sunRraycastHightFactor: 1
-  sFX_Play: 0
 --- !u!114 &5764383921166094365
 MonoBehaviour:
   m_ObjectHideFlags: 0

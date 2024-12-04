@@ -142,6 +142,7 @@ MonoBehaviour:
   endOfLevelManager: {fileID: 500968103782929182, guid: 9ea26cad73240ab4fb2c1195fca7fb0d, type: 3}
   finishClip: {fileID: 8300000, guid: 99fa06ddc4b766e4c98139683ee4783a, type: 3}
   hitBox: {fileID: 7503625447058638574, guid: f8b76540710319049bf3095be54a539f, type: 3}
+  pointers: {fileID: 979197119604596895, guid: e63cee8ca31faa34199ee5b30fdbb49d, type: 3}
 --- !u!82 &2130098644894752476
 AudioSource:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class SunMonitor : MonoBehaviour
     private Vector3 oppositeDirection;
     private Renderer playerRenderer;
     public GameObject burningAnimation;
+    public AudioSource burning;
 
     private bool isBurning;
     private bool _isCausingDamage = false;
@@ -67,6 +68,7 @@ public class SunMonitor : MonoBehaviour
                 PlayerController player = gameObject.GetComponent<PlayerController>();
                 if (player != null)
                 {
+                    gameObject.GetComponent<AudioSource>().Stop();
                     burningAnimation.SetActive(false);
                     _isCausingDamage = false;
                 }
@@ -87,6 +89,7 @@ public class SunMonitor : MonoBehaviour
 
                 //Dmg from sun
                 {
+                gameObject.GetComponent<AudioSource>().Play();
                 isBurning = true;
                 _isCausingDamage = true;
                 
@@ -104,8 +107,10 @@ public class SunMonitor : MonoBehaviour
                         // Do the thing!
                         burningAnimation.SetActive(true);
                         TakeDamage(player, DamageRepeatRate);
+                        gameObject.GetComponent<AudioSource>().Play();
 
-                            _nextTimeTimerTriggers = Time.realtimeSinceStartup + DamageRepeatRate;
+
+                        _nextTimeTimerTriggers = Time.realtimeSinceStartup + DamageRepeatRate;
 
                         /*audioSource.clip = damageSoundClip;
                         audioSource.Play();*/
@@ -117,6 +122,7 @@ public class SunMonitor : MonoBehaviour
 
     private void TakeDamage(PlayerController player, float repeatRate)
     {
+        
         repeatRate = DamageRepeatRate;
         player.TakeDamage(DamageAmount);
 
@@ -128,6 +134,8 @@ public class SunMonitor : MonoBehaviour
             _isCausingDamage = false;
             Destroy(burningSoundSource);
             burningAnimation.SetActive(false);
+            gameObject.GetComponent<AudioSource>().Stop();
+
         }
     }
 }

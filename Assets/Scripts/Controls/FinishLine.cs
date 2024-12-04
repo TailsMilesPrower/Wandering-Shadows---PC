@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
     public EndOfLevelManager endOfLevelManager;
     [SerializeField] private AudioClip finishClip;
+    [SerializeField] private AudioMixerGroup audioMixer;
 
     AudioSource burningSoundSource;
     public GameObject hitBox;

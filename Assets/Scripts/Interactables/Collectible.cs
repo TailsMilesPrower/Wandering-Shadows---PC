@@ -9,6 +9,7 @@ public class Collectible : MonoBehaviour
 {
     //private static Collectible collectibles;
     public static event Action OnCollected;
+    public GameObject CollectiblePrefab;
 
     private Collider myCollider;
 
@@ -17,6 +18,7 @@ public class Collectible : MonoBehaviour
     //public MeshRenderer rendHitBox;
 
     [SerializeField] private AudioClip collectSoundClip;
+    [SerializeField] private AudioMixerGroup audioMixer;
     public void Awake()
     {
         /*if (gameObject == null)

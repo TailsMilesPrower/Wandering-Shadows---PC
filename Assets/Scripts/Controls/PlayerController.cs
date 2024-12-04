@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private AudioClip deathClip;
+    [SerializeField] private AudioMixerGroup audioMixer;
     private HealthBar mHealthBar;
     public HUD gameOverlay;
     public int Health = 100;

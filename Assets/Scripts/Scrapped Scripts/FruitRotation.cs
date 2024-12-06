@@ -6,7 +6,7 @@ using UnityEngine.Audio;
 
 public class FruitRotation : MonoBehaviour
 {
-    public static event Action OnCollected;
+    //public static event Action OnCollected;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
